@@ -40,7 +40,7 @@ main{overflow-x:clip;max-width:1180px;margin:auto;padding:24px 16px 110px}
 .opt:hover{border-color:#999;transform:translateY(-2px)}
 .opt[aria-checked=true]{border-color:var(--red);box-shadow:0 0 0 3px #cc000022}
 .opt>svg{width:84px;height:84px}.opt .cd{margin:0;max-width:none}.opt{padding:14px 8px}@media(min-width:900px){.stick{position:sticky;top:72px}}.opt span{display:block;font-size:.86rem;margin-top:6px;font-weight:600}
-.sw{display:flex;height:44px;border-radius:8px;overflow:hidden;margin-bottom:6px}.sw i{flex:1}
+.sw2 svg{display:block;width:100%;border-radius:6px;box-shadow:0 0 0 1px #0002;margin-bottom:6px}.sw{display:flex;height:44px;border-radius:8px;overflow:hidden;margin-bottom:6px}.sw i{flex:1}
 .two{display:grid;gap:24px}@media(min-width:900px){.two{grid-template-columns:1fr 1fr;align-items:start}.hero{grid-template-columns:1.1fr 1fr}}
 .hero{display:grid;gap:28px;align-items:center}
 .panel{background:var(--bg);border-radius:var(--r);padding:20px;overflow:hidden}
@@ -72,7 +72,7 @@ i.tc{color:#b45309;font-style:italic}
 .live .panel{padding:10px}.live .cd{max-width:270px;margin-bottom:6px}.live .mail{margin:0}.live .dw{max-height:30vh}.live .tabs{margin:0 0 6px}
 .live .btn{padding:6px 14px;font-size:.85rem}.opts .two{display:block}.opts{padding-top:12px}
 .stage{position:relative;width:100%;max-width:480px;margin:0 auto;padding-bottom:40%}
-.stage:before{content:"";position:absolute;inset:-8%;background:radial-gradient(circle,#cc000024,transparent 65%);z-index:-1}
+.stage:before{content:"";position:absolute;inset:-8%;background:radial-gradient(circle,var(--hg2,#cc000024),transparent 65%);z-index:-1}
 .stage .cd:first-child{transform:rotate(-3deg)}.stage .cd+.cd{position:absolute;width:84%;right:0;top:58%;max-width:none;transform:rotate(3deg);z-index:2}
 @media(min-width:900px){.split{display:grid;grid-template-columns:1fr 1.1fr;gap:32px;align-items:start}.split>.live{grid-column:2;grid-row:1;max-height:calc(100vh - var(--hh) - 90px);border:0;top:calc(var(--hh) + 8px)}.split>.opts{grid-column:1;grid-row:1}.live .cd{max-width:460px}.live .dw{max-height:62vh}.live .panel{padding:20px}}
 .cap{display:block;font-size:.7rem;color:var(--mut);margin:0 0 3px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}.live .pair .cd,.pair .cd{max-width:none;margin:0}
@@ -80,7 +80,7 @@ i.tc{color:#b45309;font-style:italic}
 .opt .cd span{font-size:inherit;display:inline;margin:0;font-weight:inherit}
 .gift{border:1px solid #cc000040;background:#fff4f4;border-radius:12px;padding:12px 14px;margin:0 0 16px;color:var(--ink)}.gift .btn{margin-top:8px;padding:6px 14px;font-size:.85rem}
 .sticker{position:absolute;z-index:3;left:-1%;top:-5%;width:88px;height:88px;border-radius:999px;background:var(--red);color:#fff;display:grid;place-content:center;text-align:center;font-size:.72rem;line-height:1.15;transform:rotate(-10deg);box-shadow:0 6px 16px #cc000055}.sticker b{font:700 1.8rem/1 Georgia,serif}
-.hero.dark{position:relative;z-index:0;background:radial-gradient(120% 90% at 85% 5%,#cc000066,transparent 55%),linear-gradient(160deg,#101012,#27272b);color:#fff;border-radius:24px;padding:26px 20px 40px;margin:-8px -4px 0;overflow:hidden}
+.hero.dark{position:relative;z-index:0;background:radial-gradient(120% 90% at 85% 5%,var(--hg,#cc000066),transparent 55%),linear-gradient(160deg,#101012,#27272b);color:#fff;border-radius:24px;padding:26px 20px 40px;margin:-8px -4px 0;overflow:hidden}
 .hero.dark h1{color:#fff;font-size:clamp(2.2rem,8vw,3.7rem)}.hero.dark p{color:#c9c9cf}
 .hero.dark .chips span{background:#ffffff14;border-color:#ffffff30;color:#fff}.hero.dark .gift{background:#ffffff10;border-color:#ffffff30;color:#fff}
 .hero.dark .btn.p{box-shadow:0 8px 28px #cc000088;padding:13px 30px;font-size:1.05rem}.hero.dark .stage{order:-1;transition:transform .15s}
@@ -111,63 +111,122 @@ i.tc{color:#b45309;font-style:italic}
 .pv b{font:700 1rem Georgia,serif;color:#fff}.pv small{font-size:.74rem;color:#ffffffbb}
 .pv em{position:absolute;top:14px;right:14px;font-style:normal;font-size:.58rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--red);color:#fff;padding:2px 7px;border-radius:999px;z-index:2}
 main{padding-bottom:170px}
-.pave4{--sg:.24;--dc:.1;grid-template-columns:repeat(4,1fr)!important;gap:6px!important}
-.pave4 .pv{padding:5px 5px 7px;border-radius:10px}.pave4 .pv .vis{height:60px;margin-bottom:4px}.pave4 .pv .vis svg{width:40px;height:40px}
+.pave4{--sg:.4;--dc:.1;grid-template-columns:repeat(4,1fr)!important;gap:6px!important}
+.pave4 .pv{padding:5px 5px 7px;border-radius:10px}.pave4 .pv .vis{height:60px;margin-bottom:4px}.pave4 .pv .vis>svg{width:40px;height:40px}
 .pave4 .pv b{font:700 .7rem/1.15 system-ui,sans-serif}.pave4 .pv small,.pave4 .pv em{display:none}
 .pvcap{font-size:.82rem!important;margin:2px 0 6px!important}
 .hero.dark .stage{padding-bottom:36%!important}.hero.dark .stage .cd+.cd{top:52%!important}
-@media(min-width:900px){.pave4{--sg:.58;--dc:.19;grid-template-columns:1fr 1fr!important;gap:10px!important}.pave4 .pv .vis{height:96px}.pave4 .pv .vis svg{width:64px;height:64px}.pave4 .pv b{font:700 1rem Georgia,serif}.pave4 .pv small,.pave4 .pv em{display:block}.pvcap{font-size:.92rem!important}.hero.dark>div:first-child{display:flex;flex-direction:column}.hero.dark .pvwrap{order:5}.hero.dark .stage{padding-bottom:34%!important}}
+@media(min-width:900px){.pave4{--sg:.58;--dc:.19;grid-template-columns:1fr 1fr!important;gap:10px!important}.pave4 .pv .vis{height:96px}.pave4 .pv .vis>svg{width:64px;height:64px}.pave4 .pv b{font:700 1rem Georgia,serif}.pave4 .pv small,.pave4 .pv em{display:block}.pvcap{font-size:.92rem!important}.hero.dark>div:first-child{display:flex;flex-direction:column}.hero.dark .pvwrap{order:5}.hero.dark .stage{padding-bottom:34%!important}}
 .cta0{min-width:0}.foot.first .cta0{display:flex;flex-direction:column;align-items:flex-start;width:66%;gap:8px}.cta0 .btn{flex:none;width:100%;min-width:0;white-space:normal;line-height:1.15;padding:11px 8px;font-size:.9rem}.cta0 .btn.p{box-shadow:0 6px 18px #cc000066}
+
+.pave4{grid-template-columns:repeat(2,1fr)!important}
+.gopt{border:2px dashed var(--red);background:#fff;border-radius:14px;padding:12px 14px;margin:0 0 16px}.gopt label{display:flex;gap:10px;align-items:flex-start;font-weight:400;margin:0}.gopt input{width:auto;margin-top:4px}.gopt b{font-size:1rem}.gopt em{font-style:normal;font-weight:800;color:var(--red);white-space:nowrap}.gopt small{display:block;margin-top:4px;color:var(--mut)}
+.gnext{border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:12px 0;font-size:.9rem}.gnext .btn{margin-top:8px;padding:6px 14px;font-size:.85rem}
+.gx ol{padding-left:20px}.gx li{margin:0 0 8px}.gx li .btn{margin-left:6px;padding:3px 10px;font-size:.8rem}.gbig{display:block;text-align:center;background:var(--red);color:#fff;font-weight:800;font-size:1.05rem;padding:16px;border-radius:14px;text-decoration:none;margin:16px 0}.gsm{font-size:.85rem;color:var(--mut)}
+
+.gpair{display:grid;gap:12px;margin:12px 0 18px}.gpair .gsm{margin:0}@media(min-width:640px){.gpair{grid-template-columns:1fr 1fr}.gpair .gsm{grid-column:1/-1}}
+.gcap{display:block;font-weight:800;font-size:.78rem;margin:0 0 4px;color:var(--ink)}.gcard{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}.gcov{height:54px}
+.gname{display:flex;gap:10px;align-items:center;padding:0 10px;margin-top:-18px}.gav{width:46px;height:46px;border-radius:50%;background:#fff;border:2px solid #fff;box-shadow:0 1px 4px #0003;display:grid;place-items:center;flex:none;overflow:hidden}.gav span{font-weight:800;color:#888}.gav svg{width:34px;height:34px}
+.gname b{display:block;font-size:.9rem;margin-top:18px}.gst{font-size:.72rem;color:#b45309}.gst span{color:var(--mut)}.gact{font-size:.72rem;color:var(--mut)}
+.gph{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:10px}.gph i{display:block;aspect-ratio:1;border-radius:8px}
+
+.gmap{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}.gm-ph{display:grid;grid-template-columns:2fr 1fr;gap:2px;height:130px}.gm-big{display:grid;place-items:center;text-align:center;color:#fff}.gm-big b{display:block;font:700 .8rem Georgia,serif;margin-top:4px}.gm-big svg{display:block;margin:auto}
+.gm-th{display:grid;gap:2px}.gm-th i{display:block}.gm-body{display:flex;gap:10px;align-items:center;padding:10px}.gm-body .gav{margin:0}.gm-body b{display:block;font-size:.9rem;margin:0}
+.gbtns{display:flex;gap:6px;padding:0 10px 10px}.gbtns span{flex:1;text-align:center;border:1px solid var(--line);border-radius:999px;padding:5px 0;font-size:.72rem;color:#1a56b8;font-weight:600}
 </style>
 </head>
-<body>
+<body><svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs id="rfdefs"></defs></svg>
 <header class="top"><div class="bar"><div class="brand"><svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#CC0000"/><g transform="rotate(-12 20 20)"><rect x="8" y="10" width="22" height="15" rx="3" fill="#fff" fill-opacity=".5"/></g><g transform="rotate(7 20 22)"><rect x="10" y="14" width="22" height="15" rx="3" fill="#fff"/><path d="M14 22c2.2-3.2 4.2-3.2 6.4 0s4.2 3.2 6.4 0" fill="none" stroke="#CC0000" stroke-width="2" stroke-linecap="round"/><rect x="14" y="17.5" width="7" height="1.8" rx=".9" fill="#CC0000" fill-opacity=".35"/></g></svg><span class="rl2"><b>reef</b><small>STUDIO PRO</small></span></div><nav class="st" id="nav" aria-label="Étapes"></nav></div><div class="prog"><div class="pl"><span>Votre carte est prête à <b id="ppct">90 %</b></span><span id="prest"></span></div><div class="pt" role="progressbar" aria-label="Avancement de votre carte" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90" id="ptrack"><i id="pbar"></i></div></div></header>
 <main id="view"></main>
-<div class="foot"><div class="cta0"><button class="btn p" data-a="express">Je la veux telle quelle</button><button class="btn" data-a="modif">Je veux la modifier</button></div><button class="btn" id="prev">Précédent</button><button class="btn p" id="next">Suivant</button></div>
+<div class="foot"><div class="cta0"><button class="btn p" data-a="modif">Je personnalise ma carte</button></div><button class="btn" id="prev">Précédent</button><button class="btn p" id="next">Suivant</button></div>
+<style>
+.thx{max-width:560px;margin:0 auto;padding:8px 4px 40px;text-align:center}
+.thx-ic{width:68px;height:68px;border-radius:50%;background:var(--red);margin:18px auto 12px;display:flex;align-items:center;justify-content:center}
+.thx h1{font:700 1.9rem/1.15 Georgia,serif;margin:6px 0 8px}
+.thx .lead{color:var(--mut);margin:0 0 16px}
+.thx-no{border:1.5px dashed var(--red);border-radius:16px;padding:14px;margin:0 0 18px;background:#fff}
+.thx-no small{display:block;color:var(--mut);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+.thx-no b{display:block;font:700 1.6rem/1.3 ui-monospace,Menlo,Consolas,monospace;color:var(--red);letter-spacing:.04em;margin:4px 0}
+.thx-no span{font-size:.85rem;color:var(--mut)}
+.thx h2{font-size:1.05rem;text-align:left;margin:22px 0 8px}
+.thx dl{margin:0;text-align:left;border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden}
+.thx dl div{display:flex;gap:12px;justify-content:space-between;padding:10px 14px;border-top:1px solid var(--line);font-size:.92rem}
+.thx dl div:first-child{border-top:0}.thx dt{color:var(--mut)}.thx dd{margin:0;font-weight:600;text-align:right}
+.thx ol{text-align:left;padding-left:20px;margin:0;color:var(--mut)}.thx li{margin:6px 0}
+.thx .contactcard{text-align:left}
+.thx .flipbox{margin:0 0 6px}
+.cmd{background:#fff;color:#111;border-radius:16px;padding:12px 14px;margin:0 0 16px;border-left:5px solid var(--red);text-align:left}
+.cmd span{display:block;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--red)}
+.cmd b{display:block;font:700 1.3rem/1.2 Georgia,serif;margin:3px 0 2px}
+.cmd small{display:block;color:#555;font-size:.85rem}
+.pvcap b{color:#fff}
+.pave4 .pv em{display:block!important;top:4px!important;right:4px!important;font-size:.5rem!important;padding:1px 5px!important}
+.hero.dark .stage{padding-bottom:50%!important}.hero.dark .stage .cd+.cd{top:52%!important;width:80%!important}.hero.dark .stage .cd:first-child{width:92%!important}.pv .vis>svg{max-width:100%}
+</style>
 <script>
 /* ============ DONNÉES (modifiables) ============ */
 // Logos : @A = couleur principale, @B = couleur secondaire
-const LOGOS=[
-{n:'Monogramme anneau',s:'<circle cx="24" cy="24" r="22" fill="none" stroke="@A" stroke-width="1.2"/><circle cx="24" cy="24" r="18.5" fill="none" stroke="@A" stroke-width="3"/><text x="24" y="30" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="16" fill="@A">@I</text>'},
-{n:'Monogramme ecusson',s:'<path d="M24 3 42 9v14c0 11-8 18-18 22C14 41 6 34 6 23V9z" fill="@A"/><path d="M24 7 38 11.5V23c0 8.5-6 14-14 17.5C16 37 10 31.5 10 23V11.5z" fill="none" stroke="@W" stroke-opacity=".6"/><text x="24" y="29" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="15" fill="@W">@I</text>'},
-{n:'Monogramme hexagone',s:'<path d="M24 2 43 13v22L24 46 5 35V13z" fill="@A"/><path d="M24 7 39 15.5v17L24 41 9 32.5v-17z" fill="none" stroke="@W" stroke-opacity=".6"/><text x="24" y="30" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="15" fill="@W">@I</text>'},
-{n:'Monogramme carre',s:'<rect x="5" y="5" width="38" height="38" fill="none" stroke="@A" stroke-width="2.6"/><rect x="9.5" y="9.5" width="29" height="29" fill="@A"/><rect x="2" y="2" width="7" height="7" fill="@B"/><rect x="39" y="39" width="7" height="7" fill="@B"/><text x="24" y="30" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="15" fill="@W">@I</text>'},
-{n:'Damier et initiales',s:'<circle cx="24" cy="24" r="21" fill="none" stroke="@A" stroke-width="2.6"/><g transform="translate(24 15) scale(0.34) translate(-24 -24)"><rect x="5" y="5" width="17" height="17" rx="2" fill="@A"/><rect x="26" y="5" width="17" height="17" rx="2" fill="@B"/><rect x="5" y="26" width="17" height="17" rx="2" fill="@B"/><rect x="26" y="26" width="17" height="17" rx="2" fill="@A"/></g><path d="M14 26h20" stroke="@A" stroke-opacity=".5"/><text x="24" y="37" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="11" fill="@A">@I</text>'},
-{n:'Mosaique et initiales',s:'<path d="M24 3 42 9v14c0 11-8 18-18 22C14 41 6 34 6 23V9z" fill="@A"/><g transform="translate(24 15) scale(0.34) translate(-24 -24)"><g transform="rotate(45 24 24)"><rect x="9" y="9" width="13" height="13" fill="@W"/><rect x="26" y="9" width="13" height="13" fill="@B"/><rect x="9" y="26" width="13" height="13" fill="@B"/><rect x="26" y="26" width="13" height="13" fill="@W"/></g></g><path d="M14 26h20" stroke="@W" stroke-opacity=".5"/><text x="24" y="37" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="11" fill="@W">@I</text>'},
-{n:'Briques et initiales',s:'<path d="M24 2 43 13v22L24 46 5 35V13z" fill="none" stroke="@A" stroke-width="2.4"/><g transform="translate(24 15) scale(0.34) translate(-24 -24)"><rect x="5" y="8" width="20" height="10" rx="2" fill="@A"/><rect x="28" y="8" width="15" height="10" rx="2" fill="@B"/><rect x="5" y="21" width="12" height="10" rx="2" fill="@B"/><rect x="20" y="21" width="23" height="10" rx="2" fill="@A"/><rect x="5" y="34" width="20" height="10" rx="2" fill="@A"/><rect x="28" y="34" width="15" height="10" rx="2" fill="@B"/></g><path d="M14 26h20" stroke="@A" stroke-opacity=".5"/><text x="24" y="37" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="11" fill="@A">@I</text>'},
-{n:'Equerre et initiales',s:'<rect x="4" y="4" width="40" height="40" rx="10" fill="@A"/><g transform="translate(24 15) scale(0.34) translate(-24 -24)"><path d="M8 5h10v24h22v10H8z" fill="@W"/><path d="M24 5h5v5h-5zM24 14h5v5h-5z" fill="@B"/></g><path d="M14 26h20" stroke="@W" stroke-opacity=".5"/><text x="24" y="37" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="11" fill="@W">@I</text>'},
-{n:'Damier anneau',s:'<circle cx="24" cy="24" r="22" fill="none" stroke="@A" stroke-width="1.2"/><circle cx="24" cy="24" r="18.5" fill="none" stroke="@A" stroke-width="3"/><g transform="translate(24 24) scale(0.5) translate(-24 -24)"><rect x="5" y="5" width="17" height="17" rx="2" fill="@A"/><rect x="26" y="5" width="17" height="17" rx="2" fill="@B"/><rect x="5" y="26" width="17" height="17" rx="2" fill="@B"/><rect x="26" y="26" width="17" height="17" rx="2" fill="@A"/></g>'},
-{n:'Mosaique anneau',s:'<circle cx="24" cy="24" r="22" fill="none" stroke="@A" stroke-width="1.2"/><circle cx="24" cy="24" r="18.5" fill="none" stroke="@A" stroke-width="3"/><g transform="translate(24 24) scale(0.5) translate(-24 -24)"><g transform="rotate(45 24 24)"><rect x="9" y="9" width="13" height="13" fill="@A"/><rect x="26" y="9" width="13" height="13" fill="@B"/><rect x="9" y="26" width="13" height="13" fill="@B"/><rect x="26" y="26" width="13" height="13" fill="@A"/></g></g>'},
-{n:'Briques anneau',s:'<circle cx="24" cy="24" r="22" fill="none" stroke="@A" stroke-width="1.2"/><circle cx="24" cy="24" r="18.5" fill="none" stroke="@A" stroke-width="3"/><g transform="translate(24 24) scale(0.5) translate(-24 -24)"><rect x="5" y="8" width="20" height="10" rx="2" fill="@A"/><rect x="28" y="8" width="15" height="10" rx="2" fill="@B"/><rect x="5" y="21" width="12" height="10" rx="2" fill="@B"/><rect x="20" y="21" width="23" height="10" rx="2" fill="@A"/><rect x="5" y="34" width="20" height="10" rx="2" fill="@A"/><rect x="28" y="34" width="15" height="10" rx="2" fill="@B"/></g>'},
-{n:'Equerre anneau',s:'<circle cx="24" cy="24" r="22" fill="none" stroke="@A" stroke-width="1.2"/><circle cx="24" cy="24" r="18.5" fill="none" stroke="@A" stroke-width="3"/><g transform="translate(24 24) scale(0.5) translate(-24 -24)"><path d="M8 5h10v24h22v10H8z" fill="@A"/><path d="M24 5h5v5h-5zM24 14h5v5h-5z" fill="@B"/></g>'}];
+const VP_LGB_TA='',VP_LGB_TB='',VP_LGB_A='',VP_LGB_B='',VP_LGB_C='',VP_LGB_T2A='',VP_LGB_T2B='';
+const LOGOS=[{n:'Carreaux et nom',noghost:1,bb:{x:2,y:2.5,w:44,h:30},get s(){const nm=esc((S.info.name||'').toUpperCase()),L=Math.max(nm.length,1),tl=Math.min(44,L*4.1).toFixed(1);return '<rect x="16.5" y="3" width="7" height="7" rx=".8" fill="@A"/><rect x="24.5" y="3" width="7" height="7" rx=".8" fill="@B"/><rect x="16.5" y="11" width="7" height="7" rx=".8" fill="@B"/><rect x="24.5" y="11" width="7" height="7" rx=".8" fill="@A"/><rect x="19" y="21.5" width="10" height=".7" fill="@B"/><text x="24" y="30" text-anchor="middle" font-family="Montserrat,Helvetica Neue,Arial,sans-serif" font-weight="700" font-size="6" textLength="'+tl+'" lengthAdjust="spacingAndGlyphs" fill="@A">'+nm+'</text>'}},{n:'Losange et nom en ligne',noghost:1,bb:{x:2,y:12,w:44,h:24},get s(){const ws=(S.info.name||'').trim().split(/\s+/),l1=esc(ws[0]||''),l2=esc(ws.slice(1).join(' ')),t1=Math.min(23,Math.max(l1.length,1)*4.6).toFixed(1),t2=Math.min(23,Math.max(l2.length,1)*3.5).toFixed(1);return '<g transform="rotate(45 11 24)"><rect x="5.5" y="18.5" width="5" height="5" fill="@A"/><rect x="11.5" y="18.5" width="5" height="5" fill="@B"/><rect x="5.5" y="24.5" width="5" height="5" fill="@B"/><rect x="11.5" y="24.5" width="5" height="5" fill="@A"/></g><rect x="22" y="13" width=".8" height="22" fill="@B"/><text x="25" y="'+(l2?'24':'28.5')+'" font-family="Montserrat,Helvetica Neue,Arial,sans-serif" font-weight="700" font-size="7" textLength="'+t1+'" lengthAdjust="spacingAndGlyphs" fill="@A">'+l1+'</text>'+(l2?'<text x="25" y="31.5" font-family="Montserrat,Helvetica Neue,Arial,sans-serif" font-weight="400" font-size="5" textLength="'+t2+'" lengthAdjust="spacingAndGlyphs" fill="@A">'+l2+'</text>':'')}},{n:'Damier',bb:{x:6,y:6,w:36,h:36},s:'<rect x="6.0" y="6.0" width="11" height="11" rx="1" fill="@A"/><rect x="6.0" y="18.5" width="11" height="11" rx="1" fill="@B"/><rect x="6.0" y="31.0" width="11" height="11" rx="1" fill="@A"/><rect x="18.5" y="6.0" width="11" height="11" rx="1" fill="@B"/><rect x="18.5" y="18.5" width="11" height="11" rx="1" fill="@A"/><rect x="18.5" y="31.0" width="11" height="11" rx="1" fill="@B"/><rect x="31.0" y="6.0" width="11" height="11" rx="1" fill="@A"/><rect x="31.0" y="18.5" width="11" height="11" rx="1" fill="@B"/><rect x="31.0" y="31.0" width="11" height="11" rx="1" fill="@A"/>'},{n:'Calepinage en losange',bb:{x:4.5,y:4.5,w:39,h:39},s:'<g transform="rotate(45 24 24)"><rect x="10.25" y="10.25" width="13" height="13" rx="1" fill="@A"/><rect x="24.75" y="10.25" width="13" height="13" rx="1" fill="@B"/><rect x="10.25" y="24.75" width="13" height="13" rx="1" fill="@B"/><rect x="24.75" y="24.75" width="13" height="13" rx="1" fill="@A"/></g>'},{n:'Truelle crantée',bb:{x:8,y:2,w:32,h:32},s:'<rect x="17" y="2" width="14" height="5" rx="2.5" fill="@B"/><rect x="21.5" y="6" width="5" height="8.5" fill="@B"/><path d="M8 14H40V30L38 34L36 30L34 34L32 30L30 34L28 30L26 34L24 30L22 34L20 30L18 34L16 30L14 34L12 30L10 34L8 30Z" fill="@A"/>'},{n:'Tomettes',bb:{x:10,y:6.5,w:28,h:26.5},s:'<polygon points="30.41,17.70 24.00,21.40 17.59,17.70 17.59,10.30 24.00,6.60 30.41,10.30" fill="@A"/><polygon points="23.40,29.30 16.99,33.00 10.58,29.30 10.58,21.90 16.99,18.20 23.40,21.90" fill="@B"/><polygon points="37.42,29.30 31.01,33.00 24.60,29.30 24.60,21.90 31.01,18.20 37.42,21.90" fill="@A"/>'},{n:'Croisillon',bb:{x:5,y:5,w:38,h:38},s:'<rect x="5" y="5" width="17" height="17" rx="1.5" fill="@A"/><rect x="26" y="5" width="17" height="17" rx="1.5" fill="@A"/><rect x="5" y="26" width="17" height="17" rx="1.5" fill="@A"/><rect x="26" y="26" width="17" height="17" rx="1.5" fill="@A"/><rect x="22.6" y="15" width="2.8" height="18" fill="@B"/><rect x="15" y="22.6" width="18" height="2.8" fill="@B"/>'},{n:'Mosaïque',bb:{x:6,y:6,w:36,h:36},s:'<rect x="6.00" y="6.00" width="8" height="8" rx=".8" fill="@A" fill-opacity=".55"/><rect x="6.00" y="15.33" width="8" height="8" rx=".8" fill="@A"/><rect x="6.00" y="24.66" width="8" height="8" rx=".8" fill="@A" fill-opacity=".55"/><rect x="6.00" y="33.99" width="8" height="8" rx=".8" fill="@A"/><rect x="15.33" y="6.00" width="8" height="8" rx=".8" fill="@A"/><rect x="15.33" y="15.33" width="8" height="8" rx=".8" fill="@A" fill-opacity=".55"/><rect x="15.33" y="24.66" width="8" height="8" rx=".8" fill="@B"/><rect x="15.33" y="33.99" width="8" height="8" rx=".8" fill="@A" fill-opacity=".55"/><rect x="24.66" y="6.00" width="8" height="8" rx=".8" fill="@A" fill-opacity=".55"/><rect x="24.66" y="15.33" width="8" height="8" rx=".8" fill="@B"/><rect x="24.66" y="24.66" width="8" height="8" rx=".8" fill="@A" fill-opacity=".55"/><rect x="24.66" y="33.99" width="8" height="8" rx=".8" fill="@A"/><rect x="33.99" y="6.00" width="8" height="8" rx=".8" fill="@A"/><rect x="33.99" y="15.33" width="8" height="8" rx=".8" fill="@A" fill-opacity=".55"/><rect x="33.99" y="24.66" width="8" height="8" rx=".8" fill="@A"/><rect x="33.99" y="33.99" width="8" height="8" rx=".8" fill="@A" fill-opacity=".55"/>'},{n:'Point de Hongrie',bb:{x:6,y:8,w:36,h:36},s:'<path d="M6 20L24 8L42 20V26L24 14L6 26Z" fill="@A"/><path d="M6 29L24 17L42 29V35L24 23L6 35Z" fill="@B"/><path d="M6 38L24 26L42 38V44L24 32L6 44Z" fill="@A"/>'},{n:'Pastille carreaux',shape:1,bb:{x:2,y:2,w:44,h:44},s:'<circle cx="24" cy="24" r="22" fill="@A"/><circle cx="24" cy="24" r="19" fill="none" stroke="@B" stroke-width="1.2"/><rect x="14.5" y="14.5" width="8.5" height="8.5" rx=".8" fill="@W"/><rect x="25" y="14.5" width="8.5" height="8.5" rx=".8" fill="@B"/><rect x="14.5" y="25" width="8.5" height="8.5" rx=".8" fill="@B"/><rect x="25" y="25" width="8.5" height="8.5" rx=".8" fill="@W"/>'},{n:'Carreau et initiales',shape:1,bb:{x:2,y:2,w:44,h:44},s:'<path d="M24 2L46 24L24 46L2 24Z" fill="@A"/><path d="M24 6.5L41.5 24L24 41.5L6.5 24Z" fill="none" stroke="@B" stroke-width="1.2"/><text x="24" y="29" text-anchor="middle" font-family="Montserrat,Helvetica Neue,Arial,sans-serif" font-weight="700" font-size="13" letter-spacing="1" fill="@W">@I</text>'},{n:'Blason carreaux',shape:1,bb:{x:5,y:2,w:38,h:44},s:'<path d="M24 2.5 L42.5 8.5 V24 C42.5 34.5 34.5 41.5 24 45.5 C13.5 41.5 5.5 34.5 5.5 24 V8.5 Z" fill="@A"/><path d="M24 2.5 L42.5 8.5 V24 C42.5 34.5 34.5 41.5 24 45.5 C13.5 41.5 5.5 34.5 5.5 24 V8.5 Z" fill="none" stroke="@B" stroke-width="1.3" transform="translate(24 24) scale(.86) translate(-24 -24)"/><rect x="16.5" y="13.5" width="7" height="7" rx=".7" fill="@W"/><rect x="24.5" y="13.5" width="7" height="7" rx=".7" fill="@B"/><rect x="16.5" y="21.5" width="7" height="7" rx=".7" fill="@B"/><rect x="24.5" y="21.5" width="7" height="7" rx=".7" fill="@W"/>'},{n:'Monogramme cercle',bb:{x:2,y:2,w:44,h:44},s:'<circle cx="24" cy="24" r="21" fill="none" stroke="@A" stroke-width="2"/><circle cx="24" cy="24" r="17.4" fill="none" stroke="@B" stroke-width=".8"/><text x="24" y="30" text-anchor="middle" font-family="Georgia,Times New Roman,serif" font-weight="700" font-size="16" letter-spacing="1" fill="@A">@I</text>'},{n:'Initiales carré plein',shape:1,bb:{x:4,y:4,w:40,h:40},s:'<rect x="4" y="4" width="40" height="40" rx="7" fill="@A"/><text x="24" y="29" text-anchor="middle" font-family="Montserrat,Helvetica Neue,Arial,sans-serif" font-weight="700" font-size="19" letter-spacing="1" fill="@W">@I</text><rect x="15" y="33.5" width="18" height="2.4" rx="1.2" fill="@B"/>'},{n:'Initiales et bande',bb:{x:6,y:13,w:36,h:24},s:'<text x="24" y="30" text-anchor="middle" font-family="Montserrat,Helvetica Neue,Arial,sans-serif" font-weight="700" font-size="21" letter-spacing="2" fill="@A">@I</text><rect x="9" y="34" width="30" height="3" rx="1.5" fill="@B"/>'}];
 // Palettes : a=accent, b=secondaire, d=fond sombre
 const PALS=[
-{n:'Rouge / graphite',a:'#CC0000',b:'#8a8a90',d:'#2b2b2e'},{n:'Bleu électrique / marine',a:'#1E6BFF',b:'#7fb0ff',d:'#0b1f44'},
-{n:'Vert énergie / ardoise',a:'#12a35f',b:'#8fe0b8',d:'#2f3e46'},{n:'Cuivre / noir',a:'#b8693a',b:'#e0a57c',d:'#141414'},
-{n:'Cobalt / blanc',a:'#0047AB',b:'#9db8e6',d:'#0b2a5e'},{n:'Ambre / nuit',a:'#f5a100',b:'#ffd37a',d:'#0e1626'},
-{n:'Turquoise / anthracite',a:'#0fa3ae',b:'#7fd8de',d:'#30343a'},{n:'Monochrome premium',a:'#111111',b:'#8a8a8a',d:'#151515'}];
+{n:'Anthracite et cuivre',a:'#2B2E33',b:'#B8693A',d:'#1C1E22'},
+{n:'Bordeaux et or rose',a:'#6E1F2E',b:'#C9906E',d:'#4A1520'},
+{n:'Vert forêt et laiton',a:'#1F4A3A',b:'#C9A24A',d:'#143226'},
+{n:'Bleu roi et orange',a:'#1F4E9E',b:'#F28C28',d:'#163A75'},
+{n:'Anthracite et rouge',a:'#2B2E33',b:'#D6403D',d:'#1C1E22'},
+{n:'Noir et or',a:'#171717',b:'#C9A24A',d:'#0D0D0D'},
+{n:'Prune et rose',a:'#4B2A5E',b:'#D98BAE',d:'#341C42'},
+{n:'Bleu canard et corail',a:'#17606B',b:'#F2765A',d:'#0F434B'},
+{n:'Chocolat et cuivre',a:'#4A3426',b:'#D98A4E',d:'#33231A'},
+{n:'Azur et jaune soleil',a:'#1F6FA8',b:'#F2B632',d:'#154F7A'},
+{n:'Ardoise et turquoise',a:'#2F3F46',b:'#3FAAB3',d:'#1F2A2F'},
+{n:'Brique et grès',a:'#A63A2B',b:'#D2A679',d:'#7A2A1F'},
+{n:'Bleu nuit et or',a:'#101B3D',b:'#D4AF37',d:'#0A1229'},
+{n:'Marine et cuivre',a:'#14284B',b:'#C97B4A',d:'#0C1A33'},
+{n:'Graphite et argent',a:'#2A2D31',b:'#8F98A3',d:'#17191C'},
+{n:'Sauge et terracotta',a:'#4F6F5B',b:'#D08C6B',d:'#365041'},
+{n:'Émeraude et rose doré',a:'#0F5D4B',b:'#D9A07F',d:'#0A4034'},
+{n:'Pétrole et sable',a:'#0F4C5C',b:'#D4B483',d:'#0A3541'},
+{n:'Rouge profond et perle',a:'#8E1B2A',b:'#9DA3AD',d:'#5E1019'},
+{n:'Bleu acier et menthe',a:'#2F4B66',b:'#4FB99A',d:'#1F3348'},
+{n:'Violet et or',a:'#3B1F5C',b:'#D9A93E',d:'#28143F'},
+{n:'Terre cuite et lin',a:'#9C4A2F',b:'#C2A082',d:'#6E311E'},
+{n:'Kaki et orange',a:'#4B5232',b:'#E07B2E',d:'#343A22'},
+{n:'Pétrole et moutarde',a:'#1D4E5F',b:'#E3A81C',d:'#133540'},
+{n:'Noir et pierre',a:'#1A1A1A',b:'#8F8878',d:'#0B0B0B'},
+{n:'Bleu BTP et orange',a:'#0E2A47',b:'#FF7A1A',d:'#081B2F'},
+{n:'Noir et jaune chantier',a:'#1B1B1B',b:'#F5B700',d:'#0D0D0D'},
+{n:'Vert prairie',a:'#2D6A4F',b:'#4FB07F',d:'#1B4332'},
+{n:'Bleu électrique',a:'#0B3D91',b:'#2F8FF0',d:'#072A66'},
+{n:'Charbon et sable',a:'#34312D',b:'#B89F78',d:'#211F1C'},
+{n:'Olive et or',a:'#3F4A2B',b:'#C0A044',d:'#2B331C'}];
 // Styles de carte : m=mode (l clair, d sombre, a accent, p papier), deco=décor
 const STYLES=[
-{n:'Minimal',m:'l',ff:'system-ui,sans-serif',deco:''},{n:'Atelier',m:'p',ff:'Georgia,serif',deco:''},
-{n:'Bandeau',m:'l',ff:'system-ui,sans-serif',deco:''},
-{n:'Contrast',m:'a',ff:'system-ui,sans-serif',deco:''},{n:'Élégant',m:'p',ff:'Georgia,serif',deco:''},{n:'Géométrique',m:'l',ff:'system-ui,sans-serif',deco:''},
-{n:'Premium Dark',m:'d',ff:'Georgia,serif',deco:''},{n:'Clean',m:'l',ff:'system-ui,sans-serif',deco:''}];
+{n:'Minimal',m:'l',ff:'system-ui,sans-serif',deco:'',mt:'bar'},
+{n:'Signature',m:'l',ff:'system-ui,sans-serif',deco:'',mt:'left',mw:3.2,vx:10},
+{n:'Bandeau latéral',m:'l',ff:'system-ui,sans-serif',deco:'',mt:'left',mw:6,vx:12},
+{n:'Diagonale',m:'l',ff:'system-ui,sans-serif',deco:'',mt:'corner'},
+{n:'Plein couleur',m:'a',ff:'system-ui,sans-serif',deco:'',mt:'bar'},
+{n:'Papier',m:'p',ser:1,ff:'Georgia,serif',deco:'',mt:'frame',vx:8.5},
+{n:'Prestige',m:'d',ser:1,ff:'Georgia,serif',deco:'',mt:'frame',vx:8.5},
+{n:'Nuit métal',m:'d',ff:'system-ui,sans-serif',deco:'',mt:'bar'},
+{n:'Bloc',m:'l',ff:'system-ui,sans-serif',deco:'',mt:'band'},
+{n:'Horizon',m:'l',ff:'system-ui,sans-serif',deco:'',mt:'top',vy:3}];
 // Signatures : bar=position du filet, lay=disposition
 const SIGS=[
 {n:'Accent line',bar:'l',lay:'r',ff:'system-ui'},{n:'Minimaliste blanc',bar:'',lay:'c',ff:'system-ui'},{n:'Prestige',bar:'t',lay:'c',ff:'Georgia'},
 {n:'Industriel',bar:'b',lay:'r',ff:'ui-monospace'},{n:'Eco',bar:'l',lay:'c',ff:'system-ui',soft:1},{n:'Scandinave',bar:'',lay:'r',ff:'system-ui'},
-{n:'Atelier',bar:'t',lay:'r',ff:'Georgia'},{n:'Corporate',bar:'l',lay:'r',ff:'Arial',dark:1}];
+{n:'Atelier',bar:'t',lay:'r',ff:'Georgia'},{n:'Corporate',bar:'l',lay:'r',ff:'Arial',dark:1},
+{n:'Barre fine serif',bar:'l',lay:'c',ff:'Georgia'},{n:'Moderne',bar:'t',lay:'r',ff:'system-ui'},{n:'Sobre mono',bar:'b',lay:'c',ff:'ui-monospace'},{n:'Classique',bar:'l',lay:'c',ff:'Arial'},
+{n:'Prestige doux',bar:'t',lay:'c',ff:'Georgia',soft:1},{n:'Corporate clair',bar:'b',lay:'r',ff:'Arial'},{n:'Nuit',bar:'l',lay:'r',ff:'system-ui',dark:1},{n:'Doux serif',bar:'',lay:'c',ff:'Georgia',soft:1}];
 // Documents : h=en-tête, t=tableau
-const DOCS=[
-{n:'Modern Tech',h:'band',t:'z',ff:'system-ui'},{n:'Official',h:'line',t:'b',ff:'Georgia'},{n:'Minimal',h:'plain',t:'l',ff:'system-ui'},
-{n:'Prestige',h:'line',t:'z',ff:'Georgia'},{n:'Dark Industrial',h:'dark',t:'l',ff:'ui-monospace'},{n:'Eco',h:'soft',t:'z',ff:'system-ui'},
-{n:'Dotted',h:'dots',t:'d',ff:'system-ui'},{n:'Executive Marine',h:'marine',t:'b',ff:'Georgia'}];
-const LINES=[['Dépose ancien revêtement (m²)',18,0],['Ragréage du sol (m²)',18,0],['Fourniture et pose carrelage sol (m²)',18,0],['Pose faïence murale (m²)',9,0],['Plinthes carrelées (ml)',14,0]];
-const EX=[18,14,55,62,12]; // montants d'EXEMPLE uniquement
-const STEPS=['Accueil','Logo','Couleurs','Style','Signature','Devis / Facture','Infos','Récapitulatif'];
-const DELAI='1 à 2 jours',CGV_URL='',MENTIONS_URL='',CONTACT='reefprostudio@gmail.com'; // renseignés par le générateur (--delai, --cgv, --mentions, --contact)
+const STEPS_BASE=['Accueil','Logo','Style','Couleurs','Signature','Infos','Récapitulatif'];const GOOGLE_OPTION=false; // option fiche Google désactivée (passer à true pour la réactiver)
+let STEPS=STEPS_BASE.slice(); // l'étape « Accès Google » s'ajoute seulement si l'option est choisie
+const PRICE_G='79 € TTC',STRIPE_URL_G='',GMAIL='reefprostudio@gmail.com',GURL='https://business.google.com/'; // STRIPE_URL_G : lien de paiement Stripe à 79 € TTC (à renseigner)
+const DELAI='1 à 2 jours',CGV_URL='',MENTIONS_URL='',CONTACT='reefprostudio@gmail.com',CONTACT_TEL='06 62 49 35 58'; // renseignés par le générateur (--delai, --cgv, --mentions, --contact)
 const TAUX='90 %'
-const MOT='Identité Pro'; // nom de l'offre : à changer ici (affiché uniquement au récapitulatif)
+const MOT='100 cartes de visite premium'; // nom de l'offre : à changer ici (affiché uniquement au récapitulatif)
 const PRICE='59 € TTC'; // affiché uniquement à l'étape Récapitulatif
 const STRIPE_URL='https://buy.stripe.com/3cI28qa7bg5TeAz4klgrS05';
 const REEF_MARK='<svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#CC0000"/><g transform="rotate(-12 20 20)"><rect x="8" y="10" width="22" height="15" rx="3" fill="#fff" fill-opacity=".5"/></g><g transform="rotate(7 20 22)"><rect x="10" y="14" width="22" height="15" rx="3" fill="#fff"/><path d="M14 22c2.2-3.2 4.2-3.2 6.4 0s4.2 3.2 6.4 0" fill="none" stroke="#CC0000" stroke-width="2" stroke-linecap="round"/><rect x="14" y="17.5" width="7" height="1.8" rx=".9" fill="#CC0000" fill-opacity=".35"/></g></svg>';
@@ -180,11 +239,11 @@ function track(ev){try{const sn=((typeof S!=='undefined'&&S.info&&S.info.siren)|
  if(window.gtag)window.gtag('event',ev,{siren:sn});
  if(TRACK_URL&&navigator.sendBeacon)navigator.sendBeacon(TRACK_URL,JSON.stringify(d))}catch(x){}}
 const ORDER_URL='https://hook.eu1.make.com/gjsdgokfya3m9taswmjkwlea9hbd6oaa',ORDER_EXTRA='',ORDER_B64='1'; // adresse qui reçoit la commande complète au clic sur « Commander » (option --commande-url du générateur)
-/* ===== Fichiers de commande : cartes PDF (88 × 58 mm avec fond perdu, format final 85 × 55 mm), logo, signature, devis, facture ===== */
+/* ===== Fichiers de commande : cartes PDF (88 × 58 mm avec fond perdu, format final 85 × 55 mm), logo, signature ===== */
 const FSANS="Helvetica Neue,Helvetica,Arial,sans-serif",FSER="Georgia,'Times New Roman',serif",U=.85;
 let _mc=null;function mw(s,size,w,fam,ls){_mc=_mc||document.createElement('canvas').getContext('2d');_mc.font=(w||400)+' '+(size*10)+'px '+fam;return(_mc.measureText(s).width+(ls||0)*10*s.length)/10}
 function wrapT(s,size,w,fam,ls,maxW){const L=[];let cur='';String(s).split(' ').forEach(wd=>{const t=cur?cur+' '+wd:wd;if(cur&&mw(t,size,w,fam,ls)>maxW){L.push(cur);cur=wd}else cur=t});if(cur)L.push(cur);return L}
-function logoInner(a,b){const W=(a.toLowerCase()=='#fff')?b:'#fff';return LOGOS[S.logo].s.split('@W').join(W).split('@A').join(a).split('@B').join(b).split('@I').join(esc(initiales()))}
+function logoInner(a,b){const W=/^#f{3,6}$/i.test(a)?b:'#fff';return rfShr(LOGOS[S.logo].s).split('@W').join(W).split('@A').join(a).split('@B').join(b).split('@I').join(esc(initiales()))}
 const logoEl=(x,y,s,a,b,op)=>`<svg x="${x}" y="${y}" width="${s}" height="${s}" viewBox="0 0 48 48"${op?` opacity="${op}"`:''}>${logoInner(a,b)}</svg>`;
 function stack(x,items,o){const fam=o.fam,ax=o.anchor||'start',mx=o.maxW||60;
  const bl=items.map(it=>{if(it.logo)return{h:it.logo,gap:it.gap||0,it};if(it.rule)return{h:it.h,gap:it.gap||0,it};const L=wrapT(it.tt=='up'?it.s.toUpperCase():it.s,it.size,it.w||400,it.fam||fam,it.ls||0,mx),lh=it.size*(it.lh||1.2);return{L,lh,h:L.length*lh,gap:it.gap||0,it}});
@@ -194,25 +253,105 @@ function stack(x,items,o){const fam=o.fam,ax=o.anchor||'start',mx=o.maxW||60;
   else if(it.rule)s+=`<rect x="${ax=='middle'?x-it.w/2:x}" y="${y}" width="${it.w}" height="${it.h}" fill="${it.c}"/>`;
   else b.L.forEach((ln,k)=>{s+=`<text x="${x}" y="${(y+k*b.lh+it.size*.95).toFixed(2)}" font-family="${it.fam||fam}" font-size="${it.size}" font-weight="${it.w||400}"${it.it?' font-style="italic"':''} fill="${it.c}" text-anchor="${ax}"${it.ls?` letter-spacing="${it.ls}"`:''}>${esc(ln)}</text>`});
   y+=b.h+b.gap});return{s,H,y0}}
-function cardSVG(side){const t=theme(),p=P(),st=STYLES[S.style],i=S.info,k=S.style,fam=/Georgia/.test(st.ff)?FSER:FSANS,c=v=>v*U;
- const nm=i.name,bo=i.boss||'',ac=i.act,sl=i.slogan;let g='';
+/* ===== Moteur de cartes v2 : l'aperçu écran et les fichiers imprimés viennent du même dessin ===== */
+const rfH=h=>{h=String(h).replace('#','');if(h.length==3)h=h.split('').map(x=>x+x).join('');return[0,2,4].map(i=>parseInt(h.substr(i,2),16))};
+const rfX=a=>'#'+a.map(v=>Math.round(Math.max(0,Math.min(255,v))).toString(16).padStart(2,'0')).join('');
+const rfMix=(a,b,t)=>{const x=rfH(a),y=rfH(b);return rfX(x.map((v,i)=>v+(y[i]-v)*t))};
+const rfL=h=>{const c=rfH(h).map(v=>{v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)});return .2126*c[0]+.7152*c[1]+.0722*c[2]};
+const rfC=(a,b)=>{const x=rfL(a),y=rfL(b);return(Math.max(x,y)+.05)/(Math.min(x,y)+.05)};
+let rfN=0,rfShare=false,rfIm={},rfImN=0;const rfLB={};
+function rfShr(s){if(!rfShare)return s;return s.replace(/<image href="(data:[^"]+)"([^>]*)\/>/g,(m,d,r)=>{const kk=d+'|'+r;let id=rfIm[kk];if(!id){id=rfIm[kk]='ri'+(++rfImN);document.getElementById('rfdefs').insertAdjacentHTML('beforeend','<image id="'+id+'" href="'+d+'"'+r+'/>')}return '<use href="#'+id+'"/>'})}
+function logoBounds(k){k=k==null?S.logo:k;if(rfLB[k])return rfLB[k];const bb=LOGOS[k].bb;if(bb)return rfLB[k]=bb;const m=/data-bb="([\d.\-]+) ([\d.\-]+) ([\d.\-]+) ([\d.\-]+)"/.exec(LOGOS[k].s);return rfLB[k]=m?{x:+m[1],y:+m[2],w:+m[3],h:+m[4]}:{x:3,y:3,w:42,h:42}}
+/* place le logo : (x,y) = point d'ancrage du contenu visible ; w,h = encombrement maximal en mm */
+function LF(o,a,b,op){if(LOGOS[S.logo].shape&&/^#f{3,6}$/i.test(a)){const q=a;a=b;b=q}const lb=logoBounds(),u=Math.min(o.w/lb.w,o.h/lb.h),cw=lb.w*u,ch=lb.h*u,
+ left=o.al=='r'?o.x-cw:o.al=='c'?o.x-cw/2:o.x,top=o.va=='b'?o.y-ch:o.va=='m'?o.y-ch/2:o.y;
+ return{s:logoEl(left-lb.x*u,top-lb.y*u,48*u,a,b,op),w:cw,h:ch,l:left,t:top}}
+function cardSVG(side,prev){rfShare=!!prev;const p=P(),i=S.info,st=STYLES[S.style],k=S.style,fam=st.ser?FSER:FSANS,uid='r'+(++rfN);
+ const A=p.a,B=p.b,D=p.d,W='#ffffff',INK='#1d1d1f',MU='#66666b';
+ const Bl=rfC(B,W)>=2.2?B:rfMix(B,'#000000',.35),Bd=rfC(B,D)>=2.6?B:rfMix(B,W,.45),Ba=rfC(B,A)>=2.4?B:rfMix(B,W,.5);
+ const nm=i.name||'',bo=i.boss||'',ac=i.act||'',sl=i.slogan||'';
+ const R=(x,y,w,h,f,o)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${f}"${o||''}/>`;
+ const fit=(txt,size,maxW,w,f,ls)=>{let s=size;while(s>size*.7&&mw(txt,s,w,f,ls)>maxW)s-=.2;return s};
+ const up=s=>String(s).toUpperCase();
+ const stk=(x,it,o)=>stack(x,it.filter(z=>z.rule||z.logo||z.s),o);
+ let bg='#fff',g='',defs='';
+ const bgOf=m=>m=='d'?D:m=='a'?A:m=='p'?'#F5EFE4':'#fff';
  if(side=='f'){
-  if(k==0){const lg=c(17),y0=12.2;g+=logoEl((85-lg)/2,y0,lg,t.a,t.b);g+=stack(42.5,[{s:nm,size:c(5),w:500,ls:1.19,c:t.fg,gap:1.6},{rule:1,w:8.5,h:.26,c:t.a,gap:1.6},{s:(bo?bo+' — ':'')+ac,size:c(2.7),c:t.mu}],{fam,anchor:'middle',maxW:70,top:y0+lg+1.6}).s}
-  else if(k==1){g+=`<rect x="-1.5" y="-1.5" width="${c(26)+1.5}" height="58" fill="${t.a}"/>`+logoEl((c(26)-c(15))/2,(55-c(15))/2,c(15),'#fff',p.d)+stack(c(31),[{s:nm,size:c(5.6),w:700,c:t.fg,gap:.7},{s:ac,size:c(2.8),c:t.mu,gap:1.5},{rule:1,w:c(14),h:.43,c:t.a,gap:2},{s:bo,size:c(3.5),w:700,c:t.fg,gap:.4},{s:sl,size:c(2.7),it:1,c:t.a}],{fam,maxW:85-c(31)-4.25}).s}
-  else if(k==2){g+=`<rect x="-1.5" y="-1.5" width="88" height="${c(21)+1.5}" fill="${t.a}"/>`+logoEl(c(6),(c(21)-c(13))/2,c(13),'#fff',p.d)+stack(c(6)+c(13)+c(4),[{s:nm,size:c(5.4),w:700,c:'#fff',ls:.18}],{fam,maxW:85-c(6)-c(13)-c(4)-4.25,cy:c(21)/2}).s+stack(c(6),[{s:bo,size:c(4.2),w:700,c:t.fg,gap:.7},{s:ac,size:c(2.9),c:t.mu,gap:1.8},{s:sl,size:c(2.8),it:1,c:t.a}],{fam,maxW:74,top:c(27)}).s+`<rect x="-1.5" y="${55-c(1.4)}" width="88" height="${c(1.4)+1.5}" fill="${p.d}"/>`}
-  else if(k==3){g+=logoEl(85+c(9)-c(72),-c(9),c(72),'#fff','#fff',.16)+logoEl(c(6),c(6),c(13),'#fff',p.d)+stack(c(6),[{s:nm,size:c(7.6),w:700,c:'#fff',tt:'up',lh:1.05,gap:1.3},{s:(bo?bo+' · ':'')+ac,size:c(3),c:'#fff'}],{fam,maxW:85-2*c(6),bottom:55-c(6)}).s}
-  else if(k==4){g+=`<rect x="${c(3)}" y="${c(3)}" width="${85-2*c(3)}" height="${55-2*c(3)}" fill="none" stroke="${t.a}" stroke-width=".26"/>`+stack(42.5,[{logo:c(11),a:t.a,b:t.b,gap:1.2},{s:nm,size:c(5),c:t.fg,tt:'up',ls:.85,gap:1.2},{s:ac,size:c(2.8),it:1,c:t.mu,gap:1.2},{s:'— '+sl+' —',size:c(2.6),c:t.a,gap:1.2},{s:bo,size:c(3),c:t.fg}],{fam,anchor:'middle',maxW:70}).s}
-  else if(k==5){g+=`<polygon points="60.1,-1.5 86.5,-1.5 86.5,56.5 43.8,56.5" fill="${t.a}"/><circle cx="${85+c(7)-c(15)}" cy="${55+c(7)-c(15)}" r="${c(15)}" fill="${p.d}"/>`+logoEl(85-c(9)-c(22),c(8),c(22),'#fff',p.d)+stack(c(6),[{s:nm,size:c(5.6),w:700,c:t.fg,gap:1},{s:ac,size:c(2.8),c:t.mu,gap:2.2},{s:bo,size:c(3.4),w:700,c:t.fg}],{fam,maxW:c(52)}).s}
-  else if(k==6){const r=stack(c(8)+c(24)+c(6)+c(6),[{s:nm,size:c(5.4),w:700,c:t.fg,ls:.5,gap:1.2},{s:ac,size:c(2.8),c:t.mu,gap:2.5},{s:bo,size:c(3.2),c:t.fg}],{fam,maxW:85-(c(8)+c(24)+c(12))-4.25});
-   g+=`<defs><radialGradient id="gl" cx="72.25" cy="8.25" r="42" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="${t.a}" stop-opacity=".35"/><stop offset="1" stop-color="${t.a}" stop-opacity="0"/></radialGradient><linearGradient id="gb" x1="0" x2="1"><stop offset="0" stop-color="${t.a}"/><stop offset="1" stop-color="${t.a}" stop-opacity="0"/></linearGradient></defs><rect x="-1.5" y="-1.5" width="88" height="58" fill="url(#gl)"/>`+logoEl(c(8),(55-c(24))/2,c(24),t.a,t.b)+`<rect x="${c(8)+c(24)+c(6)}" y="${r.y0}" width=".26" height="${r.H}" fill="${t.a}"/>`+r.s+`<rect x="-1.5" y="${55-c(1.2)}" width="88" height="${c(1.2)+1.5}" fill="url(#gb)"/>`}
-  else{g+=`<rect x="-1.5" y="-1.5" width="${c(36)+1.5}" height="58" fill="${t.a}"/>`+logoEl((c(36)-c(20))/2,(55-c(20))/2,c(20),'#fff',p.d)+stack(c(42),[{s:nm,size:c(5.4),w:700,c:t.fg,gap:1.1},{s:ac,size:c(2.8),c:t.mu,gap:2.5},{s:bo,size:c(3.4),w:700,c:t.fg}],{fam,maxW:85-c(42)-4.25}).s}
- }else{
-  const L=[i.phone||'Téléphone à compléter',i.email,noProto(i.site),i.street||'Rue à compléter',i.city].filter(Boolean),m=qrMatrix(qrPayload().txt),n=m?m.length:0;let d='';
-  if(m)m.forEach((row,r)=>{let cc=0;while(cc<n){if(row[cc]){let e=cc;while(e<n&&row[e])e++;d+='M'+cc+' '+r+'h'+(e-cc)+'v1h-'+(e-cc)+'z';cc=e}else cc++}});
-  g+=logoEl(85+c(7)-c(62),55+c(9)-c(62),c(62),t.a,t.b,.07)+stack(c(5.5),L.map((x,q)=>({s:x,size:c(3.3),c:t.fg,lh:1.6,gap:q==L.length-1?c(3):0})).concat([{s:i.legal,size:c(2.8),c:t.mu,lh:1.55}]),{fam,top:c(5.5),maxW:c(60)}).s;
-  const qx=85-c(5.5)-c(30);if(m)g+=`<svg x="${qx}" y="${c(5.5)}" width="${c(30)}" height="${c(30)}" viewBox="-3 -3 ${n+6} ${n+6}"><rect x="-3" y="-3" width="${n+6}" height="${n+6}" fill="#fff"/><path d="${d}" fill="#111"/></svg>`+stack(qx+c(15),[{s:'Scannez pour enregistrer le contact',size:c(2.1),c:t.mu}],{fam,anchor:'middle',maxW:c(30),top:c(5.5)+c(30)+1}).s;
-  g+=`<rect x="-1.5" y="${55-c(1.3)}" width="88" height="${c(1.3)+1.5}" fill="${t.a=='#fff'?'#ffffff88':t.a}"/>`}
- return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 58" width="880" height="580"><rect x="0" y="0" width="88" height="58" fill="${t.bg}"/><g transform="translate(1.5 1.5)">${g}</g></svg>`}
+  bg=bgOf(st.m);
+  if(k==0){ /* Minimal : centré, aéré */
+   const l=LF({x:42.5,y:13.5,w:38,h:20,al:'c',va:'m'},A,Bl);g+=l.s;
+   g+=stk(42.5,[{s:up(nm),size:fit(up(nm),4.8,72,600,fam,1.1),w:600,ls:1.1,c:D,gap:1.8},{rule:1,w:9,h:.3,c:Bl,gap:1.8},{s:ac,size:2.7,c:MU,ls:.3,gap:1},{s:bo,size:3.1,w:600,c:INK}],{fam,anchor:'middle',maxW:72,top:27.5}).s;
+   g+=R(-1.5,53.7,88,2.8,A)+R(-1.5,53.7,22,2.8,Bl)}
+  else if(k==1){ /* Signature : bande latérale, nom en pied */
+   g+=`<circle cx="90" cy="-4" r="32" fill="${rfMix(A,W,.93)}"/><circle cx="90" cy="-4" r="20" fill="${rfMix(A,W,.88)}"/>`;
+   g+=R(-1.5,-1.5,4.7,60,A)+R(-1.5,-1.5,4.7,15,Bl);
+   g+=LF({x:10,y:16,w:36,h:18,al:'l',va:'m'},A,Bl).s;
+   g+=stk(10,[{s:nm,size:fit(nm,6.4,68,700,fam,0),w:700,c:A,gap:1.7},{rule:1,w:10,h:.5,c:Bl,gap:1.9},{s:bo,size:3.7,w:600,c:INK,gap:.7},{s:up(ac),size:2.6,c:MU,ls:.35}],{fam,maxW:68,bottom:48}).s}
+  else if(k==2){ /* Bandeau latéral */
+   g+=R(-1.5,-1.5,31.5,60,A)+R(30,-1.5,1.3,60,Ba);
+   g+=LF({x:14.2,y:27.5,w:23,h:30,al:'c',va:'m'},W,Ba).s;
+   g+=stk(37.5,[{s:nm,size:fit(nm,5.6,41,700,fam,0),w:700,c:A,gap:1.2},{s:ac,size:2.7,c:MU,gap:2},{rule:1,w:9,h:.4,c:Bl,gap:2},{s:bo,size:3.5,w:600,c:INK,gap:.6},{s:sl,size:2.7,it:1,c:Bl}],{fam,maxW:41.5,cy:27.5}).s}
+  else if(k==3){ /* Diagonale */
+   g+=`<polygon points="62.5,-1.5 86.5,-1.5 86.5,56.5 45.5,56.5" fill="${A}"/><polygon points="59.4,-1.5 62.5,-1.5 45.5,56.5 42.4,56.5" fill="${Bl}"/><circle cx="85" cy="55" r="12.5" fill="${D}"/>`;
+   g+=LF({x:71.5,y:23,w:23,h:22,al:'c',va:'m'},W,Ba).s;
+   g+=stk(7,[{s:nm,size:fit(nm,5.6,38,700,fam,0),w:700,c:A,gap:1.3},{s:ac,size:2.7,c:MU,gap:2.4},{s:bo,size:3.5,w:600,c:INK}],{fam,maxW:38,cy:27.5}).s}
+  else if(k==4){ /* Plein couleur */
+   if(!LOGOS[S.logo].noghost)g+=LF({x:88,y:60,w:58,h:58,al:'r',va:'b'},W,W,.08).s;
+   g+=LF({x:6,y:6,w:30,h:16,al:'l',va:'t'},W,Ba).s;
+   g+=stk(6,[{s:up(nm),size:fit(up(nm),7,73,700,fam,.4),w:700,ls:.4,c:W,gap:1.8},{rule:1,w:9,h:.5,c:Ba,gap:2},{s:(bo?bo+' · ':'')+ac,size:3,c:'#ffffffe6'}],{fam,maxW:73,bottom:48.5}).s;
+   g+=R(-1.5,53.7,88,2.8,Ba)}
+  else if(k==5){ /* Papier : filet double, serif */
+   g+=`<rect x="3" y="3" width="79" height="49" fill="none" stroke="${A}" stroke-width=".3"/><rect x="4.3" y="4.3" width="76.4" height="46.4" fill="none" stroke="${Bl}" stroke-width=".15"/>`;
+   g+=LF({x:42.5,y:15.5,w:34,h:18,al:'c',va:'m'},A,Bl).s;
+   g+=stk(42.5,[{s:up(nm),size:fit(up(nm),4.6,66,500,fam,1.2),ls:1.2,c:D,gap:1.8},{rule:1,w:14,h:.25,c:Bl,gap:1.8},{s:ac,size:2.9,it:1,c:'#6b6358',gap:1.2},{s:bo,size:3.1,c:INK}],{fam,anchor:'middle',maxW:66,top:27.5}).s}
+  else if(k==6){ /* Prestige : nuit et filet */
+   defs+=`<radialGradient id="${uid}g" cx="42.5" cy="14" r="36" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="${A}" stop-opacity=".55"/><stop offset="1" stop-color="${A}" stop-opacity="0"/></radialGradient>`;
+   g+=R(-1.5,-1.5,88,60,`url(#${uid}g)`)+`<rect x="3.4" y="3.4" width="78.2" height="48.2" fill="none" stroke="${Bd}" stroke-width=".3" opacity=".75"/>`;
+   g+=LF({x:42.5,y:15.5,w:36,h:18,al:'c',va:'m'},W,Bd).s;
+   g+=stk(42.5,[{s:up(nm),size:fit(up(nm),4.8,66,500,fam,1.4),ls:1.4,c:W,gap:1.8},{rule:1,w:12,h:.3,c:Bd,gap:1.7},{s:ac,size:2.8,it:1,c:Bd,gap:1.2},{s:bo,size:3,c:'#d5d9dd'}],{fam,anchor:'middle',maxW:66,top:27.5}).s}
+  else if(k==7){ /* Nuit métal */
+   defs+=`<linearGradient id="${uid}a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${rfMix(D,W,.06)}"/><stop offset="1" stop-color="${rfMix(D,'#000000',.45)}"/></linearGradient><radialGradient id="${uid}b" cx="22" cy="27.5" r="30" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="${rfMix(A,W,.2)}" stop-opacity=".55"/><stop offset="1" stop-color="${A}" stop-opacity="0"/></radialGradient><linearGradient id="${uid}c" x1="0" x2="1"><stop offset="0" stop-color="${Bd}"/><stop offset="1" stop-color="${Bd}" stop-opacity="0"/></linearGradient>`;
+   g+=R(-1.5,-1.5,88,60,`url(#${uid}a)`)+R(-1.5,-1.5,88,60,`url(#${uid}b)`);
+   g+=LF({x:22,y:27.5,w:30,h:30,al:'c',va:'m'},W,Bd).s+R(41,13.5,.3,28,Bd,' opacity=".8"');
+   g+=stk(46.5,[{s:nm,size:fit(nm,5,34,700,fam,0),w:700,c:W,gap:1.2},{s:ac,size:2.7,c:'#c4cad0',gap:2.2},{s:bo,size:3.3,w:600,c:W}],{fam,maxW:35,cy:27.5}).s;
+   g+=R(-1.5,53.7,88,2.8,`url(#${uid}c)`)}
+  else if(k==8){ /* Bloc : bandeau couleur en pied */
+   g+=R(-1.5,36,88,21.5,A)+R(-1.5,36,88,1.2,Bl);
+   const l=LF({x:6,y:5,w:28,h:23,al:'l',va:'t'},A,Bl);g+=l.s;
+   g+=stk(6+l.w+6,[{s:nm,size:fit(nm,5.4,85-12-l.w-6,700,fam,0),w:700,c:D,gap:1.5},{rule:1,w:8,h:.4,c:Bl}],{fam,maxW:85-12-l.w-6,cy:5+l.h/2}).s;
+   g+=stk(6,[{s:bo,size:4.3,w:700,c:W,gap:1},{s:sl||ac,size:2.8,c:'#ffffffd9'}],{fam,maxW:73,cy:47.2}).s}
+  else{ /* Horizon : bloc supérieur couleur */
+   g+=R(-1.5,-1.5,88,39,A)+R(-1.5,37,88,1.4,Bl);
+   g+=LF({x:42.5,y:15.5,w:34,h:17,al:'c',va:'m'},W,Ba).s;
+   g+=stk(42.5,[{s:up(nm),size:fit(up(nm),4.4,72,700,fam,1.2),w:700,ls:1.2,c:W}],{fam,anchor:'middle',maxW:72,bottom:34}).s;
+   g+=stk(42.5,[{s:ac,size:2.8,c:MU,gap:1.2},{s:bo,size:3.6,w:700,c:INK}],{fam,anchor:'middle',maxW:72,cy:47}).s}
+ }else{ /* ===== VERSO : même univers, contact lisible, QR dégagé ===== */
+  const vm=st.vm||st.m,dark=vm=='d',acc=vm=='a';bg=bgOf(vm);
+  const fg=dark||acc?W:INK,mu=dark?'#bfc5cb':acc?'#ffffffcc':MU,hd=dark||acc?W:A,c2=dark?Bd:acc?Ba:Bl,lc1=dark||acc?W:A,lc2=c2;
+  const fr=st.mt=='frame',x0=st.vx||6,yo=st.vy||0,qx=85-(fr?8.5:6)-20,m=qrMatrix(qrPayload().txt),n=m?m.length:0;
+  /* motif de bord, repris du recto */
+  if(st.mt=='bar'){g+=R(-1.5,53.7,88,2.8,dark?Bd:acc?Ba:A)+(dark||acc?'':R(-1.5,53.7,22,2.8,Bl))}
+  else if(st.mt=='left'){g+=R(-1.5,-1.5,(st.mw||4.7)+1.5,60,dark?Bd:acc?Ba:A)+(st.mw<4?R(-1.5,-1.5,4.7,15,Bl):R(st.mw,-1.5,1.1,60,Ba))}
+  else if(st.mt=='corner'){g+=`<polygon points="86.5,41 86.5,56.5 70,56.5" fill="${A}"/>`}
+  else if(st.mt=='band'){g+=R(-1.5,51.5,88,6,A)+R(-1.5,51.5,88,.9,Bl)}
+  else if(st.mt=='top'){g+=R(-1.5,-1.5,88,5,A)+R(-1.5,3.5,88,.9,Bl)}
+  else if(fr){g+=`<rect x="3.4" y="3.4" width="78.2" height="48.2" fill="none" stroke="${c2}" stroke-width=".3" opacity=".8"/>`}
+  /* identité en tête */
+  const lg=LF({x:x0,y:6+yo,w:13,h:9.5,al:'l',va:'t'},lc1,lc2);g+=lg.s;
+  g+=stk(x0+lg.w+3,[{s:up(nm),size:fit(up(nm),3.4,qx-(x0+lg.w+3)-3,700,fam,.5),w:700,ls:.5,c:hd,gap:.7},{s:ac,size:2.3,c:mu}],{fam,maxW:qx-(x0+lg.w+3)-3,cy:6+yo+lg.h/2}).s;
+  g+=R(x0,19.5+yo,qx-x0-3,.25,c2);
+  /* coordonnées */
+  const L=[];if(i.phone)L.push({s:i.phone,size:3.5,w:700,c:fg,lh:1.45});else L.push({s:'Téléphone à compléter',size:3.1,c:mu,lh:1.45});
+  if(i.email)L.push({s:i.email,size:3,c:fg,lh:1.45});if(i.site)L.push({s:noProto(i.site),size:3,c:fg,lh:1.45});
+  L.push({s:i.street||'Rue à compléter',size:3,c:i.street?fg:mu,lh:1.45});if(i.city)L.push({s:i.city,size:3,c:fg,lh:1.45});
+  g+=stk(x0,L,{fam:FSANS,maxW:qx-x0-3,top:22.7+yo}).s;
+  /* QR */
+  if(m){let d='';m.forEach((row,r)=>{let cc=0;while(cc<n){if(row[cc]){let e=cc;while(e<n&&row[e])e++;d+='M'+cc+' '+r+'h'+(e-cc)+'v1h-'+(e-cc)+'z';cc=e}else cc++}});
+   g+=`<svg x="${qx}" y="${6+yo}" width="20" height="20" viewBox="-3 -3 ${n+6} ${n+6}" shape-rendering="crispEdges"><rect x="-3" y="-3" width="${n+6}" height="${n+6}" fill="#fff"/><path d="${d}" fill="#111"/></svg>`;
+   g+=stk(qx+10,[{s:'Scannez pour enregistrer le contact',size:1.9,c:mu,gap:1.6},{s:i.legal||'',size:2.1,c:mu}].filter(x=>x.s),{fam:FSANS,anchor:'middle',maxW:22,top:27+yo}).s}
+ }
+ const vb=prev?'1.5 1.5 85 55':'0 0 88 58';rfShare=false;
+ return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${vb}"${prev?' style="display:block;width:100%;height:100%"':' width="880" height="580"'}><defs>${defs}</defs><rect x="-1.5" y="-1.5" width="91" height="61" fill="${bg}"/><g transform="translate(1.5 1.5)">${g}</g></svg>`}
 const MMPT=2.834645669;
 function pdfFromJpeg(jpg,wpx,hpx){const W=(88*MMPT).toFixed(2),H=(58*MMPT).toFixed(2),B=(1.5*MMPT).toFixed(2),W2=(88*MMPT-1.5*MMPT).toFixed(2),H2=(58*MMPT-1.5*MMPT).toFixed(2),enc=new TextEncoder(),parts=[],off=[];let len=0;
  const push=x=>{const u=typeof x=='string'?enc.encode(x):x;parts.push(u);len+=u.length},obj=(n,b)=>{off[n]=len;push(n+' 0 obj\n'+b+'\nendobj\n')};
@@ -223,7 +362,13 @@ function pdfFromJpeg(jpg,wpx,hpx){const W=(88*MMPT).toFixed(2),H=(58*MMPT).toFix
  const xr=len;let x='xref\n0 6\n0000000000 65535 f \n';for(let q=1;q<=5;q++)x+=String(off[q]).padStart(10,'0')+' 00000 n \n';push(x+`trailer\n<< /Size 6 /Root 1 0 R >>\nstartxref\n${xr}\n%%EOF`);
  const out=new Uint8Array(len);let o=0;parts.forEach(u=>{out.set(u,o);o+=u.length});return out}
 async function svgRaster(svg,w,h,type,bg){const img=new Image();await new Promise((ok,ko)=>{img.onload=ok;img.onerror=ko;img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg)});const c=document.createElement('canvas');c.width=w;c.height=h;const x=c.getContext('2d');if(bg){x.fillStyle=bg;x.fillRect(0,0,w,h)}x.drawImage(img,0,0,w,h);return new Promise(r=>c.toBlob(r,type,.95))}
-function logoSVGfile(){const p=P();return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="512" height="512">${logoInner(p.a,p.b)}</svg>`}
+function logoDims(mx){const lb=logoBounds(),w=lb.w+2,h=lb.h+2;return w>=h?[mx,Math.round(mx*h/w)]:[Math.round(mx*w/h),mx]}
+function logoSVGfile(a,b){const p=P(),lb=logoBounds(),d=logoDims(512);return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${lb.x-1} ${lb.y-1} ${lb.w+2} ${lb.h+2}" width="${d[0]}" height="${d[1]}">${logoInner(a||p.a,b||p.b)}</svg>`}
+function sigBody(){const g=SIGS[S.sig],i=S.info,p=P(),c=p.a,ff=g.ff+',Arial,sans-serif';
+ const bd=g.bar=='l'?`border-left:4px solid ${c};padding-left:12px`:g.bar=='t'?`border-top:3px solid ${c};padding-top:10px`:g.bar=='b'?`border-bottom:3px solid ${c};padding-bottom:10px`:'';
+ const ln=(t,s)=>t?`<div style="margin:0;${s||''}">${esc(t)}</div>`:'',lk=(t,u)=>t?`<div style="margin:0"><a href="${esc(u)}" style="color:${c};text-decoration:none">${esc(t)}</a></div>`:'';
+ const site=i.site?(/^https?:\/\//.test(i.site)?i.site:'https://'+i.site):'',leg=[i.legal,i.siren?'SIREN '+i.siren:''].filter(Boolean).join(' · ');
+ return `<table cellpadding="0" cellspacing="0" border="0" style="font-family:${ff};font-size:13px;line-height:1.5;color:#333"><tr><td style="${bd}">${i.boss?`<div style="margin:0;font-size:15px;font-weight:bold;color:${c}">${esc(i.boss)}</div>`:''}${ln(i.name+' — '+i.act,'color:#555')}${ln(i.phone)}${i.email?lk(i.email,'mailto:'+i.email):''}${lk(noProto(i.site),site)}${ln(i.street)}${ln(i.city)}${leg?ln(leg,'font-size:11px;color:#777'):''}</td></tr></table>`}
 const _crct=(()=>{const t=new Uint32Array(256);for(let n=0;n<256;n++){let c=n;for(let k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0}return t})();
 function crc32(u){let c=0xFFFFFFFF;for(let i=0;i<u.length;i++)c=_crct[(c^u[i])&255]^(c>>>8);return(c^0xFFFFFFFF)>>>0}
 function zipStore(files){const enc=new TextEncoder(),ch=[],cd=[];let off=0;const w16=(a,v)=>a.push(v&255,(v>>8)&255),w32=(a,v)=>a.push(v&255,(v>>8)&255,(v>>16)&255,(v>>>24)&255);
@@ -232,66 +377,59 @@ function zipStore(files){const enc=new TextEncoder(),ch=[],cd=[];let off=0;const
  let cdl=0;cd.forEach(x=>cdl+=x.length);const e=[];w32(e,0x06054b50);w16(e,0);w16(e,0);w16(e,files.length);w16(e,files.length);w32(e,cdl);w32(e,off);w16(e,0);
  const all=[...ch,...cd,new Uint8Array(e)];let n=0;all.forEach(x=>n+=x.length);const out=new Uint8Array(n);let p=0;all.forEach(x=>{out.set(x,p);p+=x.length});return out}
 const xe=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-function docxFile(kind,logoU8){const i=S.info,p=P(),dev=kind=='Devis',ac=p.a.replace('#',''),enc=new TextEncoder();
- const run=(t,o)=>{o=o||{};return `<w:r><w:rPr>${o.b?'<w:b/>':''}${o.i?'<w:i/>':''}<w:color w:val="${o.c||'1D1D1F'}"/><w:sz w:val="${o.s||21}"/></w:rPr><w:t xml:space="preserve">${xe(t)}</w:t></w:r>`};
- const par=(rs,o)=>{o=o||{};return `<w:p><w:pPr><w:spacing w:before="${o.bf||0}" w:after="${o.af==null?60:o.af}"/>${o.j?`<w:jc w:val="${o.j}"/>`:''}</w:pPr>${typeof rs=='string'?rs:rs.join('')}</w:p>`};
- const tx=(t,o)=>par(run(t,o),o);
- const cell=(inner,w,o)=>{o=o||{};return `<w:tc><w:tcPr><w:tcW w:w="${w}" w:type="dxa"/>${o.fill?`<w:shd w:val="clear" w:color="auto" w:fill="${o.fill}"/>`:''}</w:tcPr>${inner||'<w:p/>'}</w:tc>`};
- const tbl=(rows,borders)=>`<w:tbl><w:tblPr><w:tblW w:w="9500" w:type="dxa"/>${borders?'<w:tblBorders><w:top w:val="single" w:sz="4" w:color="CCCCCC"/><w:bottom w:val="single" w:sz="4" w:color="CCCCCC"/><w:insideH w:val="single" w:sz="4" w:color="CCCCCC"/></w:tblBorders>':''}<w:tblCellMar><w:left w:w="80" w:type="dxa"/><w:right w:w="80" w:type="dxa"/></w:tblCellMar></w:tblPr>${rows.map(r=>`<w:tr>${r}</w:tr>`).join('')}</w:tbl>`;
- const img=`<w:r><w:drawing><wp:inline distT="0" distB="0" distL="0" distR="0"><wp:extent cx="900000" cy="900000"/><wp:docPr id="1" name="Logo"/><a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"><a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:nvPicPr><pic:cNvPr id="0" name="logo.png"/><pic:cNvPicPr/></pic:nvPicPr><pic:blipFill><a:blip r:embed="rId2"/><a:stretch><a:fillRect/></a:stretch></pic:blipFill><pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="900000" cy="900000"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></pic:spPr></pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing></w:r>`;
- const dt=new Date().toLocaleDateString('fr-FR');let ht=0;
- const L=[run(i.name,{b:1,s:28}),run(' ',{})];
- const left=par(img,{af:40})+tx(i.name,{b:1,s:26,af:20})+tx((i.boss?i.boss+' — ':'')+i.legal,{})+tx(i.act,{c:'555555'})+tx(i.street+', '+i.city,{})+tx('SIREN '+i.siren+(dev?'':' · N° de TVA intracommunautaire : à compléter'),{})+tx('Tél. '+i.phone+(i.email?' · '+i.email:''),{});
- const right=tx(dev?'DEVIS':'FACTURE',{b:1,s:44,c:ac,j:'right'})+tx((dev?'Devis':'Facture')+' n° '+(dev?'DEV':'FAC')+'-2026-001',{j:'right',b:1})+tx("Date d'émission : "+dt,{j:'right'})+(dev?tx("Validité de l'offre : 30 jours",{j:'right'}):tx('Date de la prestation / livraison : '+dt,{j:'right'})+tx("Date d'échéance : à compléter",{j:'right'}));
- const head=tbl([cell(left,5600)+cell(right,3900)]);
- const client=tx('CLIENT',{b:1,c:ac,bf:200})+tx('Nom ou raison sociale du client',{})+tx('Adresse de facturation du client',{})+(dev?'':tx('SIREN du client : 000 000 000  (obligatoire entre professionnels)',{b:1})+tx('Adresse de livraison (si différente de l’adresse de facturation) : ……',{}));
- const hd=(t,w,j)=>cell(par(run(t,{b:1,c:'FFFFFF'}),{j,af:20}),w,{fill:ac});
- const rows=[hd('Désignation',5000)+hd('Qté',900,'right')+hd('PU HT',1700,'right')+hd('Total HT',1900,'right')];
- LINES.forEach((l,q)=>{const tot=l[1]*EX[q];ht+=tot;rows.push(cell(tx(l[0]+' (exemple)',{af:20}),5000)+cell(tx(String(l[1]),{j:'right',af:20}),900)+cell(tx(EX[q].toFixed(2)+' €',{j:'right',af:20}),1700)+cell(tx(tot.toFixed(2)+' €',{j:'right',af:20}),1900))});
- const totals=tx('Total HT : '+ht.toFixed(2)+' €',{j:'right',bf:120})+tx('TVA (taux à adapter, par exemple 20 %) : '+(ht*.2).toFixed(2)+' €',{j:'right'})+tx('Total TTC : '+(ht*1.2).toFixed(2)+' €',{j:'right',b:1,s:26,c:ac})+tx('Si vous êtes en franchise en base de TVA : « TVA non applicable, article 293 B du CGI » (supprimer la ligne de TVA).',{i:1,s:17,c:'777777',j:'right'});
- const cond=dev?tx('CONDITIONS',{b:1,c:ac,bf:200})+tx('Nature de l’opération : prestation de services / livraison de biens / opération mixte (barrer les mentions inutiles).',{})+tx('Délai d’exécution : à compléter. Conditions de paiement : à compléter (acompte, solde).',{})+tx('Bon pour accord — date et signature du client :',{bf:160})
-  :tx('MENTIONS OBLIGATOIRES (réforme de la facturation électronique)',{b:1,c:ac,bf:200})+tx('Nature de l’opération : prestation de services / livraison de biens / opération mixte (barrer les mentions inutiles).',{})+tx('Option pour le paiement de la TVA d’après les débits : oui / non.',{})+tx('Conditions de règlement : paiement à réception / à ….. jours. Pas d’escompte pour paiement anticipé.',{})+tx('Pénalités de retard : trois fois le taux d’intérêt légal. Indemnité forfaitaire pour frais de recouvrement : 40 €.',{});
- const note=tx('Modèle modifiable : remplacez les lignes d’exemple, les prix, la TVA et les mentions selon votre activité. '+(dev?'':'Pour émettre une facture électronique au format Factur-X, transmettez-la via une plateforme agréée en reprenant ces mentions dans votre outil de facturation.'),{i:1,s:17,c:'777777',bf:200});
- const body=head+client+'<w:p/>'+tbl(rows,1)+totals+cond+note;
- const ns='xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"';
- const doc=`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document ${ns}><w:body>${body}<w:sectPr><w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="1000" w:right="1100" w:bottom="1000" w:left="1100" w:header="500" w:footer="500" w:gutter="0"/></w:sectPr></w:body></w:document>`;
- const F=[['[Content_Types].xml','<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Default Extension="png" ContentType="image/png"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/></Types>'],
-  ['_rels/.rels','<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships>'],
-  ['word/_rels/document.xml.rels','<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/logo.png"/></Relationships>'],
-  ['word/document.xml',doc]].map(x=>({name:x[0],data:enc.encode(x[1])}));
- F.push({name:'word/media/logo.png',data:logoU8});return zipStore(F)}
 function blobToDataURL(b){return new Promise(r=>{const f=new FileReader();f.onload=()=>r(f.result);f.readAsDataURL(b)})}
-function sigFile(logoUrl){let h='';try{const d=new DOMParser().parseFromString(sigHTML(),'text/html').querySelector('.mail');h=d?d.lastElementChild.outerHTML.replace(/<svg[\s\S]*?<\/svg>/,`<img src="${logoUrl}" width="52" height="52" alt="Logo" style="display:block;border:0">`):''}catch(x){}
+function sigFile(logoUrl){let h='';try{const d=new DOMParser().parseFromString(sigHTML(),'text/html').querySelector('.mail');h=d?d.lastElementChild.outerHTML.replace(/<svg[\s\S]*?<\/svg>/,`<img src="${logoUrl}" width="110" alt="Logo" style="display:block;border:0;height:auto">`):''}catch(x){}
  return `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Votre signature e-mail</title><style>body{font-family:Arial,sans-serif;max-width:640px;margin:24px auto;padding:0 16px;color:#222}.box{border:1px solid #ddd;border-radius:10px;padding:18px;margin:16px 0}button{background:#CC0000;color:#fff;border:0;border-radius:999px;padding:12px 22px;font-size:16px;cursor:pointer}li{margin:6px 0}</style></head><body><h2>Votre signature e-mail</h2><p>1. Touchez le bouton pour copier la signature, logo compris.<br>2. Collez-la dans les paramètres de signature de votre messagerie.</p><button id="b">Copier la signature</button><div class="box"><div id="sig">${h}</div></div>
 <p><b>Où la coller</b></p><ul><li><b>Outlook</b> : Fichier, Options, Courrier, Signatures, Nouvelle, puis coller.</li><li><b>Apple Mail</b> : Réglages, Signatures, puis coller.</li><li><b>Gmail</b> : Paramètres, Voir tous les paramètres, Signature, puis coller. Si le logo n'apparaît pas, cliquez sur l'icône image de l'éditeur et téléversez le fichier logo.png fourni avec cette commande.</li></ul>
 <script>var b=document.getElementById('b');b.onclick=async function(){var el=document.getElementById('sig');try{await navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([el.innerHTML],{type:'text/html'}),'text/plain':new Blob([el.innerText],{type:'text/plain'})})]);b.textContent='Signature copiée'}catch(e){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');b.textContent='Signature copiée'}}<\/script></body></html>`}
+function pngSetDpi(u8,dpi){const ppm=Math.round(dpi/0.0254),sig=8;
+ const crcT=(()=>{const t=[];for(let n=0;n<256;n++){let c=n;for(let k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0}return t})();
+ const crc=b=>{let c=0xFFFFFFFF;for(const x of b)c=crcT[(c^x)&255]^(c>>>8);return(c^0xFFFFFFFF)>>>0};
+ const body=new Uint8Array(13),dv=new DataView(body.buffer);body.set([112,72,89,115]);dv.setUint32(4,ppm);dv.setUint32(8,ppm);body[12]=1;
+ const chunk=new Uint8Array(21),cv=new DataView(chunk.buffer);cv.setUint32(0,9);chunk.set(body,4);cv.setUint32(17,crc(body));
+ const ihdrEnd=sig+8+13+4,out=new Uint8Array(u8.length+21);out.set(u8.subarray(0,ihdrEnd));out.set(chunk,ihdrEnd);out.set(u8.subarray(ihdrEnd),ihdrEnd+21);return out}
+
 async function buildOrderFiles(){const f=[],tx=(n,s,m)=>f.push({name:n,blob:new Blob([s],{type:m})});
- for(const [side,nm] of [['f','carte-recto.pdf'],['b','carte-verso.pdf']]){const jb=await svgRaster(cardSVG(side),2079,1370,'image/jpeg','#fff'),u8=new Uint8Array(await jb.arrayBuffer());f.push({name:nm,blob:new Blob([pdfFromJpeg(u8,2079,1370)],{type:'application/pdf'})})}
- tx('logo.svg',logoSVGfile(),'image/svg+xml');const lp=await svgRaster(logoSVGfile(),1024,1024,'image/png',null);f.push({name:'logo.png',blob:lp});
- const lw=await svgRaster(logoSVGfile(),512,512,'image/png','#ffffff');f.push({name:'logo-fond-blanc.png',blob:lw});
- const small=await svgRaster(logoSVGfile(),256,256,'image/png',null),smallU8=new Uint8Array(await small.arrayBuffer());
- tx('signature-email.html',sigFile(await blobToDataURL(small)),'text/html');
+ for(const [side,nm] of [['f','carte-recto.png'],['b','carte-verso.png']]){const pb=await svgRaster(cardSVG(side).replace('width="880" height="580"','width="1039" height="685"'),1039,685,'image/png','#fff'),pu=new Uint8Array(await pb.arrayBuffer());f.push({name:nm,blob:new Blob([pngSetDpi(pu,300)],{type:'image/png'})})}
+ tx('logo.svg',logoSVGfile(),'image/svg+xml');const d1=logoDims(3600),lp=await svgRaster(logoSVGfile(),d1[0],d1[1],'image/png',null);f.push({name:'logo.png',blob:lp});
+ const d2=logoDims(2000),lw=await svgRaster(logoSVGfile(),d2[0],d2[1],'image/png','#ffffff');f.push({name:'logo-fond-blanc.png',blob:lw});
+ const d3=logoDims(360),small=await svgRaster(logoSVGfile(),d3[0],d3[1],'image/png',null),smallU8=new Uint8Array(await small.arrayBuffer());
+ f.push({name:'signature-logo.png',blob:small});tx('signature-email.html',sigFile(await blobToDataURL(small)),'text/html');
  const wm='application/vnd.openxmlformats-officedocument.wordprocessingml.document';
- f.push({name:'devis-modifiable.docx',blob:new Blob([docxFile('Devis',smallU8)],{type:wm})});f.push({name:'facture-modifiable.docx',blob:new Blob([docxFile('Facture',smallU8)],{type:wm})});return f}
+ return f}
 async function b64of(bl){const u=new Uint8Array(await bl.arrayBuffer());let s='';for(let k=0;k<u.length;k+=0x8000)s+=String.fromCharCode.apply(null,u.subarray(k,k+0x8000));return btoa(s)}
-async function sendOrder(){if(!ORDER_URL)return;const i=S.info,ref=new URL(stripeUrl()).searchParams.get('client_reference_id');
- const ch={logo:LOGOS[S.logo].n,palette:PALS[S.pal].n,style:STYLES[S.style].n,signature:SIGS[S.sig].n,devis_facture:DOCS[S.doc].n};
- const txt=['NOUVELLE COMMANDE — '+MOT+' — '+PRICE,'Référence : '+ref,'Date : '+new Date().toLocaleString('fr-FR'),'',
-  'ENTREPRISE','Nom : '+i.name,'Dirigeant : '+i.boss,'Forme : '+i.legal,'SIREN : '+i.siren,'Activité : '+i.act,'Slogan : '+i.slogan,'',
+async function sendOrder(){if(!ORDER_URL)return;const i=S.info,ref=orderNo(),sref=new URL(stripeUrl()).searchParams.get('client_reference_id');
+ const ch={logo:LOGOS[S.logo].n,palette:PALS[S.pal].n,style:STYLES[S.style].n,signature:SIGS[S.sig].n,option_google:S.google?'oui':'non'};
+ const txt=[(S.google?'*** OPTION GOOGLE +20 € TTC : OUI — INVITATION À VÉRIFIER SUR '+GMAIL+' ***':''),'NOUVELLE COMMANDE — '+MOT+(S.google?' + option Google':'')+' — '+curPrice(),'Numéro de commande : '+ref,'Référence Stripe : '+sref,'Date : '+new Date().toLocaleString('fr-FR'),'',
+  'ENTREPRISE','Nom : '+i.name,'Dirigeant : '+i.boss,'Forme : '+i.legal,'SIREN : '+(i.siren||'—'),'Activité : '+i.act,'Slogan : '+i.slogan,'',
   'CONTACT','Téléphone : '+i.phone,'E-mail : '+(i.email||'—'),'Site : '+(i.site||'—'),'Adresse : '+i.street+', '+i.city,'',
-  'CHOIX DU CLIENT','Logo : '+ch.logo,'Palette : '+ch.palette,'Style de carte : '+ch.style,'Signature : '+ch.signature,'Devis et facture : '+ch.devis_facture,'',
-  'FICHIERS JOINTS','carte-recto.pdf et carte-verso.pdf (88 x 58 mm avec fond perdu, format final 85 x 55 mm, 600 dpi)','logo.svg, logo.png, logo-fond-blanc.png, signature-email.html (à copier-coller), devis-modifiable.docx, facture-modifiable.docx (modifiables par le client)'].join('\n');
- const fd=new FormData();fd.append('_subject','Nouvelle commande — '+i.name+' ('+ref+')');fd.append('message',txt);fd.append('reference',ref);
+  'CHOIX DU CLIENT','Logo : '+ch.logo,'Palette : '+ch.palette,'Style de carte : '+ch.style,'Signature : '+ch.signature,(GOOGLE_OPTION?'Option Google : '+(S.google?'OUI (+20 € TTC, total 79 € TTC) — fiche Google à identifier avec le nom, l’adresse et le téléphone ci-dessus':'non'):'Aucune option'),'',
+  'FICHIERS JOINTS','carte-recto.png et carte-verso.png (88 x 58 mm avec fond perdu, format final 85 x 55 mm, 1039 x 685 px à 300 ppp)','logo.svg (VECTORIEL : à fournir à l’imprimeur du camion), logo.png (haute définition, fond transparent), logo-fond-blanc.png, signature-email.html','','SIGNATURE E-MAIL : voir le bloc « SIGNATURE DU CLIENT » en bas de ce mail (logo + coordonnées, à copier-coller directement)'].join('\n');
+ const fd=new FormData();fd.append('_subject','Nouvelle commande — '+i.name+' ('+ref+')');fd.append('message',txt);fd.append('reference',ref);fd.append('numero_commande',ref);fd.append('prix_total',curPrice());fd.append('prefixe_fichiers',slug(i.name)+'_'+ref);
  [['entreprise',i.name],['dirigeant',i.boss],['telephone',i.phone],['email',i.email],['site',i.site],['rue',i.street],['ville',i.city],['siren',i.siren]].forEach(x=>fd.append(x[0],x[1]||''));
  Object.keys(ch).forEach(k=>fd.append(k,ch[k]));
  let files=[];try{files=await buildOrderFiles()}catch(x){fd.append('erreur_fichiers',String(x))}
  for(const f of files){const key=f.name.replace(/[.-]/g,'_');if(ORDER_B64)fd.append('b64_'+key,await b64of(f.blob));else fd.append(key,f.blob,f.name)}
- const js={reference:ref,info:i,choix:ch,indices:{logo:S.logo,palette:S.pal,style:S.style,signature:S.sig,devis:S.doc}};
- fd.append('json',JSON.stringify(js));
+ const js={reference:ref,info:i,choix:ch,indices:{logo:S.logo,palette:S.pal,style:S.style,signature:S.sig,google:S.google?1:0},prix_total:curPrice()};
+ fd.append('json',JSON.stringify(js));fd.append('signature_html',sigBody());{const dl=logoDims(120);fd.append('signature_logo_w',String(dl[0]));fd.append('signature_logo_h',String(dl[1]))}
  ORDER_EXTRA.split('&').filter(Boolean).forEach(p=>{const k=p.split('=');fd.append(k[0],decodeURIComponent(k.slice(1).join('=')))});
  await fetch(ORDER_URL,{method:'POST',mode:'no-cors',body:fd})}
+function showThanks(demo){let sv=null;try{sv=JSON.parse(localStorage.getItem('reef_commande')||'null')}catch(x){}
+ const ok=demo||!!sv;
+ if(sv&&!demo){Object.assign(S.info,sv.info);S.logo=sv.logo;S.pal=sv.pal;S.style=sv.style;S.sig=sv.sig;S.google=(GOOGLE_OPTION&&sv.google)?1:0;S.orderNo=sv.no}
+ const i=S.info,no=ok?orderNo():'',row=(a,b)=>'<div><dt>'+a+'</dt><dd>'+esc(b)+'</dd></div>';
+ document.querySelector('.foot').style.display='none';document.querySelector('.prog').style.display='none';$('#nav').style.display='none';
+ $('#view').innerHTML='<section class="thx"><div class="thx-ic"><svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>'
+ +'<h1>Merci pour votre commande</h1>'
+ +(ok?'<p class="lead">Votre commande est bien enregistrée. Nous préparons votre carte.</p><div class="thx-no"><small>Numéro de commande</small><b>'+esc(no)+'</b><span>Conservez-le : il figure dans le nom de vos fichiers et dans nos échanges.</span></div>'
+   +'<div class="flipbox">'+cardHTML()+'</div>'
+   +'<h2>Récapitulatif</h2><dl>'+row('Entreprise',i.name)+row('Offre',MOT+(S.google?' + option Google':'')+' · '+curPrice())+row('Logo',LOGOS[S.logo].n)+row('Palette',PALS[S.pal].n)+row('Style de carte',STYLES[S.style].n)+row('Signature e-mail',SIGS[S.sig].n)+(S.google?row('Option Google','Visuel ajouté à votre fiche Google · +20 € TTC'):'')+row('Livraison',i.street+', '+i.city)+(i.email?row('Fichiers envoyés à',i.email):'')+'</dl>'
+  :'<p class="lead">Votre commande est bien enregistrée. Retrouvez votre numéro de commande dans l’e-mail de confirmation que vous allez recevoir.</p>')
+ +'<h2>Et maintenant ?</h2><ol><li>Vos 100 cartes de visite sont expédiées sous '+esc(DELAI)+' ouvrés, à l’adresse indiquée. La livraison est offerte.</li><li>Votre logo et votre signature e-mail arrivent par e-mail.</li>'+(S.google?'<li>Pour l’option Google, envoyez-nous l’invitation de gestionnaire (étape ci-dessous).</li>':'')+'</ol>'+(S.google?googleBlock():'')
+ +'<div class="contactcard"><div class="cc-brand">'+REEF_LOGO+'</div><b>Une question ?</b><span>Citez votre numéro de commande'+(ok?' '+esc(no):'')+'.<br>'+esc(CONTACT)+'<br>'+CONTACT_TEL+'</span><div class="cc-btns"><a class="pill red" href="tel:+33662493558">Appeler le '+CONTACT_TEL+'</a><a class="pill line" href="mailto:'+esc(CONTACT)+'">Nous écrire</a></div></div></section>';
+ scrollTo(0,0)}
 function showBusy(m){closeM();const d=document.createElement('div');d.className='modal';d.id='md';d.innerHTML='<div style="text-align:center"><b>'+m+'</b><p>Merci de patienter quelques secondes…</p></div>';document.body.appendChild(d)}
-async function payFlow(){const url=stripeUrl();track('clic_paiement');
+async function payFlow(){if(S.google&&!STRIPE_URL_G){showM('<h3>Paiement avec option Google indisponible</h3><p>Le paiement à 79 € TTC n’est pas encore activé. Décochez l’option Google pour commander à 59 € TTC, ou écrivez-nous à '+esc(CONTACT)+'.</p><button class="btn p" data-a="mclose">Compris</button>');return}const url=stripeUrl();track('clic_paiement');saveOrder();
  if(!ORDER_URL){window.open(url,'_blank');return}
  let w=null;try{w=window.open('','_blank');if(w)w.document.write('<p style="font:16px system-ui;padding:24px">Préparation de votre commande…</p>')}catch(x){}
  showBusy('Préparation de votre commande');
@@ -300,23 +438,27 @@ async function payFlow(){const url=stripeUrl();track('clic_paiement');
 document.addEventListener('click',e=>{const a=e.target.closest('a.btn.p');if(!a||!S.cgv)return;e.preventDefault();e.stopPropagation();payFlow()},true);
 const telH=()=>{const d=CONTACT.replace(/\D/g,'');return d.length==10&&d[0]=='0'?'+33'+d.slice(1):d};
 const CGV_HTML=`<h3>Conditions générales de vente</h3>
-<p><b>1. Objet.</b> Vente de l'offre « ${MOT} » : 100 cartes de visite imprimées et, en format numérique, un logo, une signature e-mail et des modèles de devis et de facture, personnalisés à partir des informations saisies par le client.</p>
-<p><b>2. Vendeur.</b> reef Studio Pro. Contact : ${CONTACT}. L'identité complète du vendeur figure sur la facture remise au client.</p>
-<p><b>3. Prix.</b> ${PRICE}, paiement unique en ligne par Stripe, sans abonnement. La livraison est offerte.</p>
+<p><b>1. Objet.</b> Vente de l'offre « ${MOT} » : 100 cartes de visite imprimées et, en format numérique, un logo et une signature e-mail, personnalisés à partir des informations saisies par le client.</p>
+<p><b>2. Vendeur.</b> reef Studio Pro. Contact : ${CONTACT} · ${CONTACT_TEL}. L'identité complète du vendeur figure sur la facture remise au client.</p>
+<p><b>3. Prix.</b> ${PRICE}.${GOOGLE_OPTION?` Avec l'option « fiche Google » (+20 € TTC) : ${PRICE_G}.`:''} Paiement unique en ligne par Stripe, sans abonnement. La livraison est offerte.</p>
 <p><b>4. Commande.</b> La commande est prise en compte après paiement. Le client valide l'aperçu de sa carte affiché avant le paiement et reste responsable de l'exactitude des informations saisies (orthographe, téléphone, adresse).</p>
-<p><b>5. Livraison.</b> Les cartes sont expédiées par courrier sous ${DELAI||'quelques jours'} ouvrés à compter du paiement, à l'adresse indiquée ; le délai de transport s'ajoute. Le logo, la signature e-mail et les modèles de devis et de facture sont envoyés par e-mail.</p>
+<p><b>5. Livraison.</b> Les cartes sont expédiées par courrier sous ${DELAI||'quelques jours'} ouvrés à compter du paiement, à l'adresse indiquée ; le délai de transport s'ajoute. Le logo et la signature e-mail sont envoyés par e-mail.</p>
 <p><b>6. Rétractation.</b> Les cartes de visite étant des biens personnalisés, le droit de rétractation ne s'applique pas à cette partie de la commande (article L221-28 du Code de la consommation).</p>
-<p><b>7. Défaut.</b> Si les cartes reçues ne sont pas conformes à l'aperçu validé, contactez-nous sous 7 jours à ${CONTACT} : nous les réimprimons ou nous remboursons.</p>
+<p><b>7. Défaut.</b> Si les cartes reçues ne sont pas conformes à l'aperçu validé, contactez-nous sous 7 jours à ${CONTACT} ou au ${CONTACT_TEL} : nous les réimprimons ou nous remboursons.</p>
 <p><b>8. Logo.</b> Le logo est un modèle personnalisé, utilisable pour l'activité du client, sans exclusivité ni garantie de dépôt comme marque.</p>
-<p><b>9. Données personnelles.</b> Les informations saisies servent uniquement à fabriquer et livrer la commande. Pour les consulter ou les faire supprimer : ${CONTACT}.</p>
-<p><b>10. Litiges.</b> Droit français. Le client consommateur peut recourir à un médiateur de la consommation, dont les coordonnées sont communiquées sur demande.</p>
+${GOOGLE_OPTION?`<p><b>9. Option fiche Google (+20 € TTC).</b> Cette option consiste à ajouter aux photos de la fiche Google Business Profile du client le visuel comportant le logo choisi. Elle ne comprend ni modification complète de la fiche, ni gestion de son contenu. Pour la réaliser, le client invite l'adresse ${GMAIL} avec le rôle Gestionnaire ; l'invitation peut nécessiter une acceptation de notre part. Nous ne demandons jamais le mot de passe Google du client et n'utilisons cet accès que pour ajouter le visuel. Le client peut retirer notre accès à tout moment. La prestation suppose que le client dispose des droits nécessaires sur sa fiche.</p>`:''}
+<p><b>${GOOGLE_OPTION?10:9}. Données personnelles.</b> Les informations saisies servent uniquement à fabriquer et livrer la commande. Pour les consulter ou les faire supprimer : ${CONTACT}.</p>
+<p><b>${GOOGLE_OPTION?11:10}. Litiges.</b> Droit français. Le client consommateur peut recourir à un médiateur de la consommation, dont les coordonnées sont communiquées sur demande.</p>
 <button class="btn p" data-a="mclose">Fermer</button>`;
-/* Référence transmise à Stripe : SIREN_L(logo)_P(palette)_S(style)_G(signature)_D(devis) */
-function stripeUrl(){const ref=[S.info.siren.replace(/\D/g,''),'L'+S.logo,'P'+S.pal,'S'+S.style,'G'+S.sig,'D'+S.doc].join('_');let u=STRIPE_URL+'?client_reference_id='+encodeURIComponent(ref);if(S.info.email)u+='&prefilled_email='+encodeURIComponent(S.info.email);return u}
+/* Référence transmise à Stripe : SIREN_L(logo)_P(palette)_S(style)_G(signature)_GBP(option Google 0/1) */
+function orderNo(){if(!S.orderNo){const d=new Date(),p=n=>String(n).padStart(2,'0'),A='ABCDEFGHJKLMNPQRSTUVWXYZ23456789';let r='';for(let k=0;k<3;k++)r+=A[Math.floor(Math.random()*A.length)];S.orderNo='REEF-'+String(d.getFullYear()).slice(2)+p(d.getMonth()+1)+p(d.getDate())+'-'+r}return S.orderNo}
+function slug(t){return String(t||'client').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^A-Za-z0-9]+/g,'-').replace(/^-+|-+$/g,'')||'client'}
+function saveOrder(){try{localStorage.setItem('reef_commande',JSON.stringify({no:orderNo(),info:S.info,logo:S.logo,pal:S.pal,style:S.style,sig:S.sig,google:S.google?1:0,date:new Date().toISOString()}))}catch(x){}}
+function stripeUrl(){const base=S.google?STRIPE_URL_G:STRIPE_URL;if(!base)return'#';const ref=[orderNo(),S.info.siren.replace(/\D/g,''),'L'+S.logo,'P'+S.pal,'S'+S.style,'G'+S.sig,'GBP'+(S.google?1:0)].join('_');let u=base+'?client_reference_id='+encodeURIComponent(ref);if(S.info.email)u+='&prefilled_email='+encodeURIComponent(S.info.email);return u}
 
 /* ============ ÉTAT CENTRAL ============ */
-const S={step:0,logo:0,pal:3,style:5,sig:0,doc:0,tab:'Devis',z:1,fl:0,ordered:0,wallet:0,
-info:{name:'FAFA CARRELAGE',ini:'FC',boss:'Fabian ADELAAR',legal:'Entrepreneur individuel',siren:'130 781 743',siret:'130 781 743 00013',street:'',city:'97320 Saint-Laurent-du-Maroni',act:'Revêtement de sols et de murs',naf:'43.33Z',ins:'',slogan:'Sols et murs, posés avec précision',phone:'',email:'',site:''}};
+const S={step:0,logo:3,pal:0,style:1,sig:0,google:0,fl:0,ordered:0,wallet:0,
+info:{name:'FAFA Carrelage',ini:'FC',boss:'Fabian ADELAAR',legal:'Entrepreneur individuel',siren:'130781743',siret:'130781743 00013',street:'',city:'97320 Saint-Laurent-du-Maroni',act:'Revêtement de sols et de murs',naf:'43.33Z',ins:'',slogan:'',phone:'',email:'',site:''}};
 const FIELDS=[['name','Entreprise'],['boss','Dirigeant'],['legal','Forme juridique'],['siren','SIREN'],['siret','SIRET'],['street','Rue et numéro (obligatoire)'],['city','Code postal et ville (obligatoire)'],['act','Activité'],['naf','NAF'],['slogan','Slogan'],['phone','Téléphone (obligatoire)'],['email','E-mail (conseillé)'],['site','Site internet (facultatif)']];
 
 /* ============ OUTILS ============ */
@@ -325,7 +467,7 @@ const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',
 const V=(k,l)=>S.info[k]?esc(S.info[k]):`<i class="tc">${l||'À compléter'}</i>`;
 const P=()=>PALS[S.pal];
 const initiales=()=>{if(S.info.ini)return S.info.ini;const t=(S.info.boss||S.info.name).split(/\s+/).filter(Boolean);return ((t[0]||'?')[0]+(t[1]?t[1][0]:'')).toUpperCase()};
-const mark=(i,sz,a,b)=>{const p=P();return `<svg viewBox="0 0 48 48" width="${sz}" height="${sz}" aria-hidden="true">${LOGOS[i].s.split('@W').join(((a||p.a).toLowerCase()=='#fff')?(b||p.b):'#fff').split('@A').join(a||p.a).split('@B').join(b||p.b).split('@I').join(esc(initiales()))}</svg>`};
+const mark=(i,sz,a,b)=>{const p=P(),lb=logoBounds(i),pd=1,x=lb.x-pd,y=lb.y-pd,w=lb.w+2*pd,h=lb.h+2*pd;let W=sz,H=sz;if(typeof sz=='number'){if(w>=h){H=+(sz*h/w).toFixed(1)}else{W=+(sz*w/h).toFixed(1)}}rfShare=true;const body=rfShr(LOGOS[i].s);rfShare=false;return `<svg viewBox="${x} ${y} ${w} ${h}" width="${W}" height="${H}" aria-hidden="true">${body.split('@W').join((/^#f{3,6}$/i.test(a||p.a))?(b||p.b):'#fff').split('@A').join(a||p.a).split('@B').join(b||p.b).split('@I').join(esc(initiales()))}</svg>`};
 const euro=n=>n.toLocaleString('fr-FR',{style:'currency',currency:'EUR'});
 const insH=()=>S.info.ins?esc(S.info.ins):'<i class="tc">Assurance à compléter</i>';
 const addr=()=>[S.info.street,S.info.city].filter(Boolean).join(', ');
@@ -343,11 +485,11 @@ function vcf(){const i=S.info,l=['BEGIN:VCARD','VERSION:3.0','FN:'+(i.boss||i.na
 const stars='<span style="letter-spacing:.2em">★★★★★</span>';
 
 /* ============ COMPOSANTS PREVIEW ============ */
-function front(t,i,p){const L=(z,a,b)=>`<div style="width:${z}cqw;height:${z}cqw">${mark(S.logo,'100%',a||t.a,b||t.b)}</div>`,w='position:absolute;',nm=esc(i.name),bo=esc(i.boss),ac=esc(i.act),sl=esc(i.slogan),k=S.style,
+function front(t,i,p){const L=(z,a,b)=>`<div style="width:${z}cqw;height:${z}cqw">${mark(S.logo,'100%',a||t.a,b||t.b)}</div>`,w='position:absolute;',nm=esc(i.name),bo=esc(i.boss),ac=esc(i.act),sl=esc(i.slogan),k=(STYLES[S.style].lay!=null?STYLES[S.style].lay:S.style),
  st='',
  col='display:flex;flex-direction:column;justify-content:center;',
- A=[`<div style="${w}inset:0;${col}align-items:center;gap:2cqw;text-align:center">${L(17)}<b style="font-size:5cqw;letter-spacing:.28em;font-weight:500">${nm}</b><i style="width:10cqw;height:.3cqw;background:${t.a}"></i><span style="color:${t.mu};font-size:2.7cqw">${bo} — ${ac}</span></div>${st}`,
- `<div style="${w}left:0;top:0;bottom:0;width:26cqw;background:${t.a};display:grid;place-items:center">${L(15,'#fff',p.d)}</div><div style="${w}left:31cqw;right:5cqw;top:0;bottom:0;${col}"><b style="font-size:5.6cqw">${nm}</b><span style="font-size:2.8cqw;color:${t.mu};margin:.8cqw 0 2cqw">${ac}</span><i style="width:14cqw;height:.5cqw;background:${t.a};margin-bottom:2.5cqw"></i><b style="font-size:3.5cqw">${bo}</b><i style="font-size:2.7cqw;color:${t.a}">${sl}</i></div>`,
+ A=[`<div style="${w}inset:0;${col}align-items:center;gap:2cqw;text-align:center">${L(17)}<b style="font-size:5cqw;letter-spacing:.28em;font-weight:500">${nm}</b><i style="width:10cqw;height:.3cqw;background:${P().b}"></i><span style="color:${t.mu};font-size:2.7cqw">${bo} — ${ac}</span></div>${st}`,
+ `<div style="${w}left:0;top:0;bottom:0;width:26cqw;background:${t.a};display:grid;place-items:center">${L(15,'#fff',p.d)}</div><div style="${w}left:31cqw;right:5cqw;top:0;bottom:0;${col}"><b style="font-size:5.6cqw">${nm}</b><span style="font-size:2.8cqw;color:${t.mu};margin:.8cqw 0 2cqw">${ac}</span><i style="width:14cqw;height:.5cqw;background:${P().b};margin-bottom:2.5cqw"></i><b style="font-size:3.5cqw">${bo}</b><i style="font-size:2.7cqw;color:${t.a}">${sl}</i></div>`,
  `<div style="${w}left:0;right:0;top:0;height:21cqw;background:${t.a};display:flex;align-items:center;gap:4cqw;padding:0 6cqw">${L(13,'#fff',p.d)}<b style="font-size:5.4cqw;color:#fff;letter-spacing:.04em">${nm}</b></div><div style="${w}left:6cqw;right:6cqw;top:27cqw"><b style="font-size:4.2cqw">${bo}</b><div style="font-size:2.9cqw;color:${t.mu};margin:.8cqw 0 2.5cqw">${ac}</div><i style="font-size:2.8cqw;color:${t.a}">${sl}</i></div><div style="${w}left:0;right:0;bottom:0;height:1.4cqw;background:${p.d}"></div>${st}`,
  `<div style="${w}right:-9cqw;top:-9cqw;opacity:.16">${L(72,'#fff','#fff')}</div><div style="${w}left:6cqw;top:6cqw">${L(13,'#fff',p.d)}</div><div style="${w}left:6cqw;right:6cqw;bottom:6cqw"><b style="font-size:7.6cqw;line-height:1;text-transform:uppercase">${nm}</b><div style="font-size:3cqw;margin-top:1.5cqw">${bo} · ${ac}</div></div>${st}`,
  `<div style="${w}inset:3cqw;border:.3cqw solid ${t.a}"></div><div style="${w}inset:0;${col}align-items:center;text-align:center;gap:1.4cqw">${L(11)}<b style="font-size:5cqw;letter-spacing:.2em;font-variant:small-caps;font-weight:400">${nm}</b><i style="font-size:2.8cqw;color:${t.mu}">${ac}</i><span style="color:${t.a};font-size:2.6cqw">— ${sl} —</span><span style="font-size:3cqw">${bo}</span></div>${st}`,
@@ -396,66 +538,56 @@ function qrPayload(){const i=S.info,d=i.phone.replace(/\D/g,''),tel=(d.length==1
 function qrBlock(t){const p=qrPayload(),m=qrMatrix(p.txt);if(!m)return '';const n=m.length;let d='';
  m.forEach((row,r)=>{let c=0;while(c<n){if(row[c]){let e=c;while(e<n&&row[e])e++;d+='M'+c+' '+r+'h'+(e-c)+'v1h-'+(e-c)+'z';c=e}else c++}});
  return `<div style="width:30cqw;flex:none"><svg viewBox="-3 -3 ${n+6} ${n+6}" shape-rendering="crispEdges" style="display:block;width:100%"><rect x="-3" y="-3" width="${n+6}" height="${n+6}" fill="#fff"/><path d="${d}" fill="#111"/></svg><div style="font-size:2.1cqw;text-align:center;color:${t.mu};margin-top:.8cqw">${p.lab}</div></div>`}
-function cardHTML(x){const t=theme(),s=STYLES[S.style],i=S.info,d=s.deco.split('@A').join(P().a);
- const base=`background-color:${t.bg};color:${t.fg};font-family:${s.ff};border-radius:${s.m=='d'?'2.5cqw':'1.2cqw'};${d}`;
- const ill=`<svg viewBox="0 0 80 56" width="26%" style="position:absolute;right:4cqw;bottom:4cqw" aria-hidden="true"><circle cx="46" cy="30" r="22" fill="${t.a}" opacity=".12"/><path d="M6 52h68M14 52V26l24-18 24 18v26" fill="none" stroke="${t.a}" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><path d="M40 20 31 34h7l-3 12 12-17h-7z" fill="${t.a}"/><path d="M62 30h10v-8M62 40h14" stroke="${t.b}" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="72" cy="22" r="2.4" fill="${t.b}"/></svg>`;
- return `<div class="cd ${(x?x=='b':S.fl)?'fl':''}"${x?'':' id="cd"'}><div class="in">
- <div class="face" style="${base}">${front(t,i,P())}</div>
- <div class="face bk" style="${base}"><div style="position:absolute;right:-7cqw;bottom:-9cqw;width:62cqw;height:62cqw;opacity:.07;pointer-events:none">${mark(S.logo,'100%',t.a,t.b)}</div><div style="position:absolute;left:0;right:0;bottom:0;height:1.3cqw;background:${t.a=='#fff'?'#ffffff88':t.a}"></div><div style="display:flex;justify-content:space-between;gap:3cqw"><div style="line-height:1.6">${contactLines()}<div style="color:${t.mu};margin-top:3cqw;font-size:2.8cqw;line-height:1.55"><div>${esc(i.legal)}</div></div></div>
- ${qrBlock(t)}</div></div></div></div>`}
+function cardHTML(x){const fc=(s,c)=>`<div class="face${c}" style="padding:0;border-radius:1.8cqw;background:#fff">${cardSVG(s,1)}</div>`;
+ return `<div class="cd ${(x?x=='b':S.fl)?'fl':''}"${x?'':' id="cd"'}><div class="in">${fc('f','')}${fc('b',' bk')}</div></div>`}
 const cardPair=()=>`<div class="pair"><div><small class="cap">Recto</small>${cardHTML('f')}</div><div><small class="cap">Verso</small>${cardHTML('b')}</div></div>`;
 const cardFlip=()=>`<div class="flipbox">${cardHTML()}<div style="text-align:center"><button class="btn" data-a="flip" aria-pressed="${!!S.fl}">Retourner la carte</button></div></div>`;
 const lnk=(t,href,c)=>t?`<div><a href="${esc(href)}" target="_blank" rel="noopener" style="color:${c};text-decoration:none">${esc(t)}</a></div>`:'';
-function docTab(t){const o=S.tab;S.tab=t;const x=docHTML();S.tab=o;return x}
 function paves(){let sig='';try{const d=new DOMParser().parseFromString(sigHTML(),'text/html').querySelector('.mail');sig=d?d.lastElementChild.outerHTML:''}catch(x){}
- const doc=t=>`<div class="vis"><div style="position:absolute;left:calc(50% - 297px);top:0;width:595px;transform:scale(var(--dc,.19));transform-origin:top center">${docTab(t)}</div></div>`;
- return `<p class="pvcap">Avec vos <b>100 cartes de visite</b>, vous recevez aussi, <b>offerts</b> :</p><div class="pave4">
- <div class="pv"><div class="vis">${mark(S.logo,64)}</div><b>Logo</b><small>adapté à votre métier</small><em>Offert</em></div>
- <div class="pv"><div class="vis"><div style="position:absolute;left:10px;top:10px;width:290px;transform:scale(var(--sg,.58));transform-origin:top left">${sig}</div></div><b>Signature e-mail</b><small>prête à l'emploi</small><em>Offerte</em></div>
- <div class="pv">${doc('Devis')}<b>Modèle de devis</b><small>à votre image</small><em>Offert</em></div>
- <div class="pv">${doc('Facture')}<b>Modèle de facture</b><small>aux mentions e-facture 2026</small><em>Offert</em></div></div>`}
+ return `<p class="pvcap"><b>+ En bonus</b>, offerts avec vos 100 cartes :</p><div class="pave4">
+ <div class="pv"><div class="vis">${mark(S.logo,64)}</div><b>Logo</b><small>adapté à votre métier</small><em>Bonus</em></div>
+ <div class="pv"><div class="vis"><div style="position:absolute;left:10px;top:10px;width:290px;transform:scale(var(--sg,.58));transform-origin:top left">${sig}</div></div><b>Signature e-mail</b><small>prête à l'emploi</small><em>Bonus</em></div></div>`}
 function sigHTML(ph){const g=SIGS[S.sig],i=S.info,p=P(),a=g.dark?'#fff':p.a;
  const bd=g.bar=='l'?`border-left:4px solid ${p.a};padding-left:12px`:g.bar=='t'?`border-top:3px solid ${p.a};padding-top:10px`:g.bar=='b'?`border-bottom:3px solid ${p.a};padding-bottom:10px`:'';
  const box=g.dark?`background:${p.d};color:#fff;padding:14px;border-radius:6px`:g.soft?`background:${p.a}14;padding:14px;border-radius:6px`:'';
  const ln=(t,c)=>t?`<div style="${c||''}">${esc(t)}</div>`:'';
  return `<div class="mail"><small>De : ${esc(i.name)} &nbsp; À : client@exemple</small><small>Objet : Votre chantier</small><p style="margin:14px 0;color:var(--ink)">Bonjour,<br>Je reste à votre disposition.<br>Cordialement,</p>
- <div style="font-family:${g.ff},sans-serif;font-size:13px;${box}"><div style="display:flex;gap:12px;align-items:${g.lay=='c'?'flex-start':'center'};flex-direction:${g.lay=='c'?'column':'row'};${bd}">${mark(S.logo,g.lay=='c'?40:52,a,g.dark?p.a:p.b)}<div>
- <b style="font-size:15px">${esc(i.boss)}</b>${ln(i.name+' — '+i.act,'opacity:.85')}${ln(i.phone||'Téléphone à compléter',i.phone?'':'color:#b45309')}${i.email?lnk(i.email,'mailto:'+i.email,'inherit'):(ph?`<div><span style="color:#b45309;border:1px dashed #b45309;border-radius:4px;padding:1px 6px;font-size:.9em;opacity:.8">Votre adresse e-mail apparaîtra ici</span></div>`:'')}${lnk(noProto(i.site),/^https?:\/\//.test(i.site)?i.site:'https://'+i.site,'inherit')}${ln(i.street||'Rue à compléter',i.street?'':'color:#b45309')}${ln(i.city)}<div style="font-size:11px;opacity:.7">${esc(i.legal)} · SIREN ${esc(i.siren)}</div></div></div></div></div>`}
-function docHTML(){const d=DOCS[S.doc],p=P(),i=S.info,dev=S.tab=='Devis',dark=d.h=='dark';
- const hd={band:`background:${p.a};color:#fff;padding:16px;margin:-34px -34px 18px`,line:`border-bottom:3px solid ${p.a};padding-bottom:12px`,plain:`border-bottom:1px solid #ccc;padding-bottom:12px`,dark:`border-bottom:2px solid ${p.a};padding-bottom:12px`,soft:`background:${p.a}18;padding:14px;margin:-34px -34px 18px`,dots:`border-bottom:2px dotted ${p.a};padding-bottom:12px`,marine:`background:${p.d};color:#fff;border-bottom:4px solid ${p.a};padding:16px;margin:-34px -34px 18px`}[d.h];
- const ht=(d.h=='band'||d.h=='marine')?'#fff':'inherit';
- const cell={z:'',l:'border-bottom:1px solid #ddd',b:'border:1px solid #bbb',d:'border-bottom:1px dotted '+p.a};
- let ht_=0;const rows=LINES.map((l,k)=>{const tot=l[1]*EX[k];ht_+=tot;return `<tr style="${d.t=='z'&&k%2?'background:#00000008':''}"><td style="${cell[d.t]}">${l[0]} <i class="tc">Exemple</i></td><td class="n" style="${cell[d.t]}">${l[1]}</td><td class="n" style="${cell[d.t]}">${euro(EX[k])}</td><td class="n" style="${cell[d.t]}">${euro(tot)}</td></tr>`}).join('');
- const tva=ht_*.2,dt=new Date().toLocaleDateString('fr-FR');
- return `<div class="doc" id="doc" style="font-family:${d.ff},sans-serif;background:${dark?'#1b1b1d':'#fff'};color:${dark?'#eee':'#1d1d1f'}">
- <div style="${hd};display:flex;justify-content:space-between;gap:14px;color:${ht}"><div style="display:flex;gap:10px;align-items:center">${mark(S.logo,44,d.h=='band'?'#fff':p.a,d.h=='band'?'#fff8':p.b)}<div><b style="font-size:15px">${esc(i.name)}</b><br>${esc(i.boss)} — ${esc(i.legal)}<br>${esc(i.act)}</div></div><div style="text-align:right"><b style="font-size:20px;letter-spacing:.06em">${dev?'DEVIS':'FACTURE'}</b><br>Réf. ${dev?'DEV':'FAC'}-EXEMPLE-001<br>Date : ${dt}</div></div>
- <div style="display:flex;justify-content:space-between;gap:14px"><div>${i.street?esc(i.street):'<i class="tc">Rue à compléter</i>'}<br>${esc(i.city)}<br>SIREN ${esc(i.siren)} · NAF ${esc(i.naf)}</div><div style="text-align:right"><b>Client</b><br><i class="tc">Nom du client à compléter</i><br><i class="tc">Adresse à compléter</i></div></div>
- <table><thead><tr style="${d.h=='soft'||d.t=='z'?`background:${p.a};color:#fff`:`border-bottom:2px solid ${p.a}`}"><th>Prestation</th><th class="n">Qté</th><th class="n">PU HT</th><th class="n">Total HT</th></tr></thead><tbody>${rows}</tbody></table>
- <div style="margin-left:auto;width:230px"><div style="display:flex;justify-content:space-between"><span>Total HT</span><b>${euro(ht_)}</b></div><div style="display:flex;justify-content:space-between"><span>TVA 20 % <i class="tc">exemple</i></span><b>${euro(tva)}</b></div><div style="display:flex;justify-content:space-between;border-top:2px solid ${p.a};margin-top:4px;padding-top:4px;font-size:14px"><b>Total TTC</b><b>${euro(ht_+tva)}</b></div></div>
- <p style="margin-top:30px;font-size:10px;color:${dark?'#aaa':'#777'}">Montants et lignes donnés à titre d'exemple. ${dev?'Devis valable : <i class="tc">durée à compléter</i>.':'Échéance et IBAN : <i class="tc">à compléter</i>.'}</p></div>`}
-function fitDoc(){const w=$('#dw');if(!w)return;const dc=$('#doc'),k=Math.min(1,(w.clientWidth-24)/595)*S.z;dc.style.transform=`scale(${k})`;dc.parentElement.style.cssText=`width:${595*k}px;height:${842*k}px`}
+ <div style="font-family:${g.ff},sans-serif;font-size:13px;${box}"><div style="display:flex;gap:12px;align-items:${g.lay=='c'?'flex-start':'center'};flex-direction:${g.lay=='c'?'column':'row'};${bd}">${mark(S.logo,g.lay=='c'?84:84,a,g.dark?p.a:p.b)}<div>
+ <b style="font-size:15px">${esc(i.boss)}</b>${ln(i.name+' — '+i.act,'opacity:.85')}${ln(i.phone||'Téléphone à compléter',i.phone?'':'color:#b45309')}${i.email?lnk(i.email,'mailto:'+i.email,'inherit'):(ph?`<div><span style="color:#b45309;border:1px dashed #b45309;border-radius:4px;padding:1px 6px;font-size:.9em;opacity:.8">Votre adresse e-mail apparaîtra ici</span></div>`:'')}${lnk(noProto(i.site),/^https?:\/\//.test(i.site)?i.site:'https://'+i.site,'inherit')}${ln(i.street||'Rue à compléter',i.street?'':'color:#b45309')}${ln(i.city)}${[i.legal,i.siren?'SIREN '+i.siren:''].filter(Boolean).length?'<div style="font-size:11px;opacity:.7">'+esc([i.legal,i.siren?'SIREN '+i.siren:''].filter(Boolean).join(' · '))+'</div>':''}</div></div></div></div>`}
 function phoneHTML(){const i=S.info,p=P(),has=!!i.phone,wa=i.phone.replace(/\D/g,'');
  return `<div class="ph"><div style="background:${p.d};color:#fff;padding:24px 16px;text-align:center"><div style="background:#fff;border-radius:16px;width:68px;height:68px;margin:0 auto 10px;display:grid;place-items:center">${mark(S.logo,48)}</div><b>${esc(i.name)}</b><div style="font-size:.8rem;opacity:.8">${esc(i.act)}</div><div style="color:#f5a100;margin-top:4px">${stars}</div><div style="font-size:.7rem;opacity:.7">Avis Google (exemple)</div></div>
  <div style="padding:14px"><a class="${has?'':'off'}" href="${has?'tel:'+esc(i.phone):'#'}">Appeler ${has?esc(i.phone):'(téléphone à compléter)'}</a><a class="${has?'':'off'}" href="${has?'https://wa.me/'+wa:'#'}" target="_blank" rel="noopener">WhatsApp${has?'':' (à compléter)'}</a>
  <a class="${i.site?'':'off'}" href="${i.site?esc(i.site):'#'}" target="_blank" rel="noopener">${i.site?esc(i.site):'Site internet (à compléter)'}</a><a class="${addr()?'':'off'}" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addr())}" target="_blank" rel="noopener">${addr()?'Itinéraire — '+esc(addr()):'Adresse à compléter'}</a>
  <button class="act" data-a="vcf" style="background:${p.a};color:#fff;border:0;font-weight:700">Enregistrer le contact</button><button class="act" data-a="wallet">Ajouter au Wallet</button>${S.vn?'<div class="note" style="font-size:.78rem">Démonstration : l\'enregistrement automatique du contact sera actif sur la version finale hébergée de votre carte digitale.</div>':''}${S.wallet?'<div class="note" style="font-size:.78rem">Simulation de démonstration : aucune intégration Apple Wallet ou Google Wallet n\'est réalisée.</div>':''}</div></div>`}
+const sigThumb=o=>{const c=P().a,bd=o.bar=='l'?`border-left:2px solid ${c};padding-left:5px`:o.bar=='t'?`border-top:2px solid ${c};padding-top:3px`:o.bar=='b'?`border-bottom:2px solid ${c};padding-bottom:3px`:'',col=o.lay=='c';return `<div style="height:56px;display:flex;align-items:center;justify-content:center"><div style="display:flex;gap:5px;align-items:center;flex-direction:${col?'column':'row'};font-family:${o.ff},sans-serif;${o.dark?'background:#222;color:#fff;padding:6px 8px;border-radius:5px':o.soft?'background:#0000000f;padding:6px 8px;border-radius:5px':''}"><i style="width:15px;height:15px;border-radius:3px;background:${c};flex:none"></i><div style="text-align:left;line-height:1.2;${bd}"><b style="font-size:9px;display:block">Nom Prénom</b><span style="font-size:7px;opacity:.7">06 00 00 00 00</span></div></div></div>`};
 const pick=(arr,key,render)=>`<div class="grid" role="radiogroup">${arr.map((o,k)=>`<button class="opt" role="radio" aria-checked="${S[key]==k}" data-a="set" data-k="${key}" data-v="${k}">${render(o,k)}<span>${o.n}</span></button>`).join('')}</div>`;
 
-const swatch=o=>`<div class="sw"><i style="background:${o.a}"></i><i style="background:${o.d}"></i><i style="background:${o.b}"></i></div>`;
+const swatch=o=>`<div class="sw2"><svg viewBox="0 0 85 55" aria-hidden="true"><rect width="85" height="55" fill="#fff"/><rect width="30" height="55" fill="${o.a}"/><rect x="30" width="2.2" height="55" fill="${o.b}"/><circle cx="15" cy="27.5" r="7" fill="${o.b}"/><rect x="38" y="17" width="34" height="6" rx="2" fill="${o.a}"/><rect x="38" y="27" width="22" height="3.4" rx="1.6" fill="${o.b}"/><rect x="38" y="34" width="26" height="3" rx="1.5" fill="#cfcfd4"/><rect y="47" x="32.2" width="53" height="8" fill="${o.d}"/></svg></div>`;
 function lockup(){const p=P(),i=S.info,t=(a,b,bg,c)=>`<div style="background:${bg};color:${c};border-radius:12px;padding:18px;text-align:center">${mark(S.logo,84,a,b)}<div style="font:700 1rem Georgia,serif;margin-top:6px">${esc(i.name)}</div><div style="font-size:.72rem;opacity:.7">${esc(i.act)}</div></div>`;
  return `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px">${t(p.a,p.b,'#fff','#1d1d1f')}${t(p.b,'#fff',p.d,'#fff')}</div>`}
+
+const curPrice=()=>S.google?PRICE_G:PRICE;
+function optionCard(){if(!GOOGLE_OPTION)return '';return `<div class="gopt"><b>Ajoutez votre nouveau visuel à votre fiche Google</b> <em>+20 € TTC</em><small>Nous intégrons le visuel avec votre logo choisi aux photos de votre fiche Google Business Profile. Aucun changement complet de la fiche, aucune gestion de son contenu.</small>${gbpPair()}<label><input type="checkbox" id="gopt" ${S.google?'checked':''}><span><b>Oui, j’ajoute cette option (+20 € TTC)</b></span></label></div>`}
+function gbp(after){const p=P(),i=S.info,g='linear-gradient(135deg,#c9cdd2,#e4e6e9)',
+ ico='<svg viewBox="0 0 48 48" width="34" height="34" fill="none" stroke="#9aa0a6" stroke-width="2.2" stroke-linejoin="round"><path d="M6 20l4-10h28l4 10M8 20v18h32V20M6 20h36M19 38V28h10v10"/></svg>',
+ big=after?`<div class="gm-big" style="background:linear-gradient(135deg,${p.a},${p.d})"><div>${mark(S.logo,64,'#fff',p.b)}<b>${esc(i.name||'Votre entreprise')}</b></div></div>`:`<div class="gm-big" style="background:${g}">${ico}</div>`;
+ return `<div class="gbp"><small class="gcap">${after?'Après : avec votre logo':'Aujourd’hui : votre fiche sur Google Maps'}</small><div class="gmap"><div class="gm-ph">${big}<div class="gm-th"><i style="background:${g}"></i><i style="background:${g}"></i></div></div><div class="gm-body"><div class="gav">${after?mark(S.logo,34,p.a,p.b):'<span>'+esc((i.name||'?').charAt(0))+'</span>'}</div><div><b>${esc(i.name||'Votre entreprise')}</b><div class="gst">4,6 ★★★★☆ <span>(exemple)</span></div><div class="gact">${esc(i.act||'')}${addr()?' · '+esc(addr()):''}</div></div></div><div class="gbtns"><span>Itinéraire</span><span>Appeler</span><span>Site web</span></div></div></div>`}
+const gbpPair=()=>`<div class="gpair">${gbp(0)}${gbp(1)}<p class="gsm">Illustration : votre logo est ajouté aux photos de votre fiche, visibles sur Google Maps et dans les résultats Google. L’affichage réel peut varier : c’est Google qui choisit la photo mise en avant.</p></div>`;
+function googleBlock(){return `<section class="gx"><h2>Accès à votre fiche Google</h2>${gbpPair()}<p><b>Pour que nous puissions ajouter votre visuel, invitez reef Studio Pro à gérer votre fiche Google.</b></p><ol><li>Cliquez sur le bouton ci-dessous pour ouvrir la page Google de gestion des accès.</li><li>Sélectionnez la fiche de votre entreprise${S.info.name?' (<i>'+esc(S.info.name)+'</i>)':''}.</li><li>Ouvrez la gestion des personnes et des accès.</li><li>Ajoutez l’adresse <b id="gmail">${GMAIL}</b> avec le rôle <b>Gestionnaire</b>. <button class="btn" data-a="copymail">Copier l’adresse</button></li><li>Validez l’invitation.</li></ol><a class="gbig" href="${GURL}" target="_blank" rel="noopener">M’ajouter comme gestionnaire sur Google</a><div class="note">Si Google vous demande de vous connecter, utilisez le compte Google qui gère votre fiche. Si plusieurs fiches s’affichent, choisissez celle de votre entreprise avant d’ouvrir les paramètres.</div><p>L’invitation doit être envoyée pour nous permettre d’intervenir. Elle peut nécessiter une acceptation de notre part : nous nous en occupons.</p><p><b>Ne nous communiquez jamais votre mot de passe Google</b> : nous n’en avons pas besoin.</p><p class="gsm">Nous utilisons cet accès uniquement pour ajouter votre visuel aux photos de votre fiche. Vous pouvez retirer notre accès à tout moment.</p></section>`}
+function googleStep(){return googleBlock()+`<div style="margin:18px 0"><button class="btn" data-a="go" data-v="6">Retour au récapitulatif</button></div>`}
+function copyMail(b){const ok=()=>{b.textContent='Adresse copiée ✓'};try{navigator.clipboard.writeText(GMAIL).then(ok,()=>{const r=document.createRange();r.selectNodeContents(document.getElementById('gmail'));const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Maintenez pour copier'})}catch(x){}}
 /* ============ ÉTAPES ============ */
 const VIEWS=[
-()=>`<div class="hero dark"><div><div class="pvwrap">${paves()}</div><h1>${S.info.boss?esc(S.info.boss.split(' ')[0])+', votre':'Votre'} ${MOT} est prête à ${TAUX}.</h1><p>Carte de visite, logo, signature e-mail, devis et facture : tout est déjà rempli avec les informations de votre entreprise. Il ne vous reste qu'à ajouter votre téléphone et votre adresse.</p><div class="chips"><span>Simple</span><span>Rapide</span><span>Efficace</span><span>Livraison offerte</span><span>Factures aux mentions e-facture 2026</span></div></div><div class="stage">${cardHTML('f')}${cardHTML('b')}</div></div>`,
+()=>`<div class="hero dark"><div><div class="cmd"><span>Votre commande</span><b>100 cartes de visite premium</b><small>Recto verso, imprimées et livrées chez vous. Livraison offerte.</small></div><h1>On modernise votre image. Vos cartes de visite sont incluses.</h1><p>100 cartes de visite premium, imprimées recto verso et livrées chez vous, déjà remplies avec votre logo et les informations de votre entreprise. Vérifiez-les et validez votre carte avant de payer.</p><div class="pvwrap">${paves()}</div><div class="chips"><span>Simple</span><span>Rapide</span><span>Efficace</span><span>Livraison offerte</span><span>Recto verso</span></div></div><div class="stage">${cardHTML('f')}${cardHTML('b')}</div></div>`,
 ()=>`<h2>Choisissez votre logo</h2><p>Des modèles adaptés à votre métier. L'aperçu de votre carte se met à jour en haut de l'écran.</p>${pick(LOGOS,'logo',(o,k)=>mark(k,84))}<div class="panel">${cardFlip()}</div>`,
-()=>`<h2>Choisissez vos couleurs</h2><p>Chaque palette s'applique à votre logo, votre carte, votre signature et vos devis.</p>${pick(PALS,'pal',swatch)}<div class="panel">${cardFlip()}</div>`,
 ()=>`<h2>Choisissez le style de carte</h2>${pick(STYLES,'style',(o,k)=>stylePrev(k))}<div class="panel">${cardFlip()}</div>`,
-()=>`<h2>Votre signature email</h2>${pick(SIGS,'sig',o=>`<div style="height:40px;display:grid;place-items:center;font:600 .75rem ${o.ff}">${o.bar=='l'?'▍':o.bar=='t'?'▔':o.bar=='b'?'▁':'·'} Aa</div>`)}${sigHTML(1)}`,
-()=>`<h2>Devis et facture</h2>${pick(DOCS,'doc',(o)=>`<div style="height:40px;font:600 .75rem ${o.ff};display:grid;place-items:center">Aa</div>`)}<div class="tabs" role="tablist">${['Devis','Facture'].map(t=>`<button class="btn" role="tab" aria-selected="${S.tab==t}" data-a="tab" data-v="${t}" style="${S.tab==t?'background:var(--ink);color:#fff':''}">${t}</button>`).join('')}<button class="btn" data-a="zoom" data-v="-.1" aria-label="Zoom arrière">−</button><button class="btn" data-a="zoom" data-v="0">Ajuster</button><button class="btn" data-a="zoom" data-v=".1" aria-label="Zoom avant">+</button></div><div class="dw" id="dw"><div>${docHTML()}</div></div>`,
+()=>`<h2>Choisissez vos couleurs</h2><p>Chaque palette s'applique à votre logo, votre carte et votre signature.</p>${pick(PALS,'pal',swatch)}<div class="panel">${cardFlip()}</div>`,
+()=>`<h2>Votre signature email</h2>${pick(SIGS,'sig',o=>sigThumb(o))}${sigHTML(1)}`,
 ()=>`<h2>Informations de l'entreprise</h2><p>Chaque modification est reportée dans tous les supports.</p><div class="two"><div>${FIELDS.map(f=>`<label>${f[1]}<input data-f="${f[0]}" value="${esc(S.info[f[0]])}" placeholder="À compléter"></label>`).join('')}</div><div class="panel" id="pv">${cardFlip()}</div></div>`,
-()=>S.ordered?`<h2>Démonstration terminée</h2><div class="note"><b>Cette commande est une démonstration.</b> Aucun paiement n'a été effectué et aucune commande réelle n'a été enregistrée.</div><p>Votre commande comprendrait 100 cartes de visite livrées à domicile, puis le logo, la signature e-mail et les devis envoyés par e-mail.</p><button class="btn" data-a="back">Retour au récapitulatif</button>`:
- `<h2>Récapitulatif</h2><p>Voici votre carte de visite, prête à être imprimée.</p><div class="panel" style="margin-bottom:18px">${cardFlip()}</div><h3>Votre logo</h3><div class="panel" style="text-align:center;margin-bottom:18px">${mark(S.logo,110)}<div style="font:700 1.1rem Georgia,serif;margin-top:6px">${esc(S.info.name)}</div></div><h3>Votre signature e-mail</h3><div style="margin-bottom:18px">${sigHTML()}</div><h3>Vos devis et factures</h3><div class="tabs" role="tablist">${['Devis','Facture'].map(t=>`<button class="btn" role="tab" aria-selected="${S.tab==t}" data-a="tab" data-v="${t}" style="${S.tab==t?'background:var(--ink);color:#fff':''}">${t}</button>`).join('')}</div><div class="dw" id="dw" style="margin-bottom:18px"><div>${docHTML()}</div></div><table class="tbl"><tr><td>Logo</td><td><b>${LOGOS[S.logo].n}</b></td></tr><tr><td>Palette</td><td><b>${P().n}</b></td></tr><tr><td>Style de carte</td><td><b>${STYLES[S.style].n}</b></td></tr><tr><td>Signature</td><td><b>${SIGS[S.sig].n}</b></td></tr><tr><td>Devis / facture</td><td><b>${DOCS[S.doc].n}</b></td></tr><tr><td>Supports inclus</td><td>Carte de visite, signature email, devis, facture</td></tr><tr><td>Envoyé par courrier</td><td><b>100 cartes de visite</b> livrées à votre domicile, <b>livraison offerte</b></td></tr><tr><td>Envoyé par e-mail</td><td>Logo, signature e-mail, devis et factures aux nouvelles mentions obligatoires de la facturation électronique, en format modifiable, offerts</td></tr></table>
- <div class="gift"><b>Par courrier :</b> vos 100 cartes de visite, imprimées et livrées à votre domicile, <b>livraison offerte</b>.<br><b>Par e-mail, en format numérique :</b> votre logo, votre signature e-mail, vos modèles de devis et de facture (avec les nouvelles mentions obligatoires de la facturation électronique), offerts.</div><div style="margin:22px 0"><div class="price">${PRICE}</div><p>Paiement unique. Sans abonnement. Sans engagement.</p><p>Pour toute quantité supplémentaire de cartes de visite, écrivez-nous à <a href="mailto:${esc(CONTACT)}">${esc(CONTACT)}</a>.</p></div><label style="display:flex;gap:8px;font-weight:400;margin:0 0 12px"><input type="checkbox" id="cgv" ${S.cgv?'checked':''} style="width:auto;margin-top:3px"><span>J'ai lu et j'accepte les ${CGV_URL?`<a href="${esc(CGV_URL)}" target="_blank" rel="noopener">`:'<a href="#" data-a="cgv">'}conditions générales de vente</a>.</span></label><a class="btn p${S.cgv?'':' off'}" href="${S.cgv?stripeUrl():'#'}" data-pay="${esc(stripeUrl())}" aria-disabled="${!S.cgv}" target="_blank" rel="noopener" style="display:inline-block;text-decoration:none">Commander : ${MOT} — ${PRICE}</a><p style="margin-top:12px;font-size:.85rem">Le paiement se fait sur la page sécurisée Stripe.</p>${CONTACT?`<div class="contactcard"><div class="cc-brand">${REEF_LOGO}</div><b>Une question ?</b>${CONTACT.includes('@')?`<span>Notre équipe vous répond par e-mail : ${esc(CONTACT)}</span><div class="cc-btns"><a class="pill red" href="mailto:${esc(CONTACT)}">Nous écrire</a></div>`:`<span>Notre équipe vous répond au ${esc(CONTACT)}</span><div class="cc-btns"><a class="pill red" href="tel:${telH()}">Appeler</a><a class="pill line" href="sms:${telH()}">Envoyer un SMS</a></div>`}</div>`:''}<p class="legal">reef Studio Pro · ${esc(CONTACT||'')} · <a href="#" data-a="cgv">Conditions générales de vente</a></p>`,
+()=>S.ordered?`<h2>Démonstration terminée</h2><div class="note"><b>Cette commande est une démonstration.</b> Aucun paiement n'a été effectué et aucune commande réelle n'a été enregistrée.</div><p>Votre commande comprendrait 100 cartes de visite livrées à domicile, puis le logo et la signature e-mail envoyés par e-mail.</p><button class="btn" data-a="back">Retour au récapitulatif</button>`:
+ `<h2>Récapitulatif</h2><p>Voici votre carte de visite, prête à être imprimée.</p><div class="panel" style="margin-bottom:18px">${cardFlip()}</div><h3>Votre logo</h3><div class="panel" style="text-align:center;margin-bottom:18px">${mark(S.logo,110)}<div style="font:700 1.1rem Georgia,serif;margin-top:6px">${esc(S.info.name)}</div></div><h3>Votre signature e-mail</h3><div style="margin-bottom:18px">${sigHTML()}</div><table class="tbl"><tr><td>Logo</td><td><b>${LOGOS[S.logo].n}</b></td></tr><tr><td>Palette</td><td><b>${P().n}</b></td></tr><tr><td>Style de carte</td><td><b>${STYLES[S.style].n}</b></td></tr><tr><td>Signature</td><td><b>${SIGS[S.sig].n}</b></td></tr><tr><td>Votre offre</td><td><b>Logo personnalisé + 100 cartes de visite premium recto verso + signature e-mail professionnelle</b></td></tr>${S.google?'<tr><td>Option Google</td><td><b>Votre visuel ajouté à votre fiche Google · +20 € TTC</b></td></tr>':''}<tr><td>Envoyé par courrier</td><td><b>100 cartes de visite</b> livrées à votre domicile, <b>livraison offerte</b></td></tr><tr><td>Envoyé par e-mail</td><td>Votre logo en fichiers, et en bonus offerts : votre signature e-mail</td></tr></table>
+ <div class="gift"><b>Par courrier :</b> vos 100 cartes de visite, imprimées et livrées à votre domicile, <b>livraison offerte</b>.<br><b>Par e-mail, en format numérique :</b> votre logo, et en bonus offerts votre signature e-mail.<br><b>Vous voyez et validez votre carte avant de payer.</b></div>${optionCard()}<div style="margin:22px 0"><div class="price">${curPrice()}</div>${S.google?'<p>Offre principale 59 € TTC + option fiche Google 20 € TTC.</p>':''}<p>Paiement unique. Sans abonnement. Sans engagement.</p><p>Pour toute quantité supplémentaire de cartes de visite, écrivez-nous à <a href="mailto:${esc(CONTACT)}">${esc(CONTACT)}</a>.</p></div><label style="display:flex;gap:8px;font-weight:400;margin:0 0 12px"><input type="checkbox" id="cgv" ${S.cgv?'checked':''} style="width:auto;margin-top:3px"><span>J'ai lu et j'accepte les ${CGV_URL?`<a href="${esc(CGV_URL)}" target="_blank" rel="noopener">`:'<a href="#" data-a="cgv">'}conditions générales de vente</a>.</span></label><a class="btn p${S.cgv?'':' off'}" href="${S.cgv?stripeUrl():'#'}" data-pay="${esc(stripeUrl())}" aria-disabled="${!S.cgv}" target="_blank" rel="noopener" style="display:inline-block;text-decoration:none">Commander : ${MOT}${S.google?' + option Google':''} — ${curPrice()}</a><p style="margin-top:12px;font-size:.85rem">Le paiement se fait sur la page sécurisée Stripe.</p>${S.google?`<div class="gnext"><b>Option Google :</b> après votre commande, une étape simple vous explique comment nous inviter à gérer votre fiche.<br><button class="btn" data-a="go" data-v="7">Voir l’étape accès Google</button></div>`:''}${CONTACT?`<div class="contactcard"><div class="cc-brand">${REEF_LOGO}</div><b>Une question ?</b>${CONTACT.includes('@')?`<span>Notre équipe vous répond par e-mail : ${esc(CONTACT)}<br>ou par téléphone au ${CONTACT_TEL}</span><div class="cc-btns"><a class="pill red" href="tel:+33662493558">Appeler le ${CONTACT_TEL}</a><a class="pill line" href="mailto:${esc(CONTACT)}">Nous écrire</a></div>`:`<span>Notre équipe vous répond au ${esc(CONTACT)}</span><div class="cc-btns"><a class="pill red" href="tel:${telH()}">Appeler</a><a class="pill line" href="sms:${telH()}">Envoyer un SMS</a></div>`}</div>`:''}<p class="legal">reef Studio Pro · ${esc(CONTACT||'')} · ${CONTACT_TEL} · <a href="#" data-a="cgv">Conditions générales de vente</a></p>`,
+()=>googleStep(),
 ];
 
 /* ============ RENDU & ÉVÉNEMENTS ============ */
@@ -463,35 +595,35 @@ const okTel=()=>S.info.phone.replace(/\D/g,'').length>=10;
 const okAdr=()=>S.info.street.trim().length>2&&S.info.city.trim().length>2;
 function closeM(){const m=document.getElementById('md');if(m)m.remove()}
 function showM(x){closeM();const m=document.createElement('div');m.className='modal';m.id='md';m.setAttribute('role','alertdialog');m.setAttribute('aria-modal','true');m.innerHTML='<div>'+x+'</div>';document.body.appendChild(m)}
-function guard(t){if(t<7)return true;
- if(!okTel()){showM('<h3>Numéro de téléphone obligatoire</h3><p>Il apparaît sur votre carte de visite, votre signature et vos devis. Sans lui, vos 100 cartes seraient imprimées sans moyen de vous joindre.</p><button class="btn p" data-a="mphone">Renseigner mon téléphone</button>');return false}
+function guard(t){if(t<6)return true;
+ if(!okTel()){showM('<h3>Numéro de téléphone obligatoire</h3><p>Il apparaît sur votre carte de visite et votre signature e-mail. Sans lui, vos 100 cartes seraient imprimées sans moyen de vous joindre.</p><button class="btn p" data-a="mphone">Renseigner mon téléphone</button>');return false}
  if(!okAdr()){showM('<h3>Adresse postale obligatoire</h3><p>C\'est l\'adresse où vos 100 cartes de visite seront livrées, et elle figure au dos de votre carte.</p><button class="btn p" data-a="mphone">Renseigner mon adresse</button>');return false}
  const m=[];if(!S.info.email)m.push('votre e-mail');if(!S.info.site)m.push('votre site internet');
  if(m.length&&!S.warned){showM('<h3>Il vous manque des informations</h3><p>Vous n\'avez pas renseigné '+m.join(' ni ')+'. Vous pouvez continuer : ils n\'apparaîtront simplement pas sur vos supports.</p><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" data-a="mphone">Compléter</button><button class="btn p" data-a="mcont">Continuer quand même</button></div>');return false}
  return true}
-const PROG=[90,92,94,96,97,98,99,100];
-function updProg(){S.max=Math.max(S.max||0,S.step);const p=PROG[Math.min(S.max,PROG.length-1)],r=STEPS.length-1-S.step;$('#ppct').textContent=p+' %';$('#pbar').style.width=p+'%';$('#ptrack').setAttribute('aria-valuenow',p);$('#prest').textContent=r>1?'Plus que '+r+' étapes':r==1?'Dernière étape avant la commande':'Il ne reste qu\'à commander'}
-function render(){updProg();$('#nav').innerHTML=STEPS.map((t,k)=>`<button data-a="go" data-v="${k}" ${k==S.step?'aria-current="step"':''}>${k+1}. ${t}</button>`).join('');
+const PROG=[90,92,94,96,98,99,100,100];
+function updProg(){S.max=Math.max(S.max||0,S.step);const p=PROG[Math.min(S.max,PROG.length-1)],r=Math.max(0,STEPS_BASE.length-1-S.step);$('#ppct').textContent=p+' %';$('#pbar').style.width=p+'%';$('#ptrack').setAttribute('aria-valuenow',p);$('#prest').textContent=r>1?'Plus que '+r+' étapes':r==1?'Dernière étape avant la commande':'Il ne reste qu\'à commander'}
+function render(){STEPS=S.google?[...STEPS_BASE,'Accès Google']:STEPS_BASE.slice();updProg();document.documentElement.style.setProperty('--hg',P().a+'66');document.documentElement.style.setProperty('--hg2',P().a+'24');$('#nav').innerHTML=STEPS.map((t,k)=>`<button data-a="go" data-v="${k}" ${k==S.step?'aria-current="step"':''}>${k+1}. ${t}</button>`).join('');
  $('#view').innerHTML=VIEWS[S.step]();const v=$('#view');v.className='';
- const LV={1:['.panel'],2:['.panel'],3:['.panel'],4:['.mail'],5:['.tabs','.dw'],6:['#pv']}[S.step];
+ const LV={1:['.panel'],2:['.panel'],3:['.panel'],4:['.mail'],5:['#pv']}[S.step];
  if(LV){const lv=document.createElement('div'),op=document.createElement('div');lv.className='live';op.className='opts';LV.forEach(q=>{const e=v.querySelector(q);if(e)lv.appendChild(e)});while(v.firstChild)op.appendChild(v.firstChild);v.append(lv,op);v.className='split'}
- document.documentElement.style.setProperty('--hh',$('header.top').offsetHeight+'px');$('#prev').disabled=S.step==0;document.querySelector('.foot').classList.toggle('first',S.step==0);$('#next').disabled=S.step==STEPS.length-1;fitDoc();
+ document.documentElement.style.setProperty('--hh',$('header.top').offsetHeight+'px');$('#prev').disabled=S.step==0;document.querySelector('.foot').classList.toggle('first',S.step==0);$('#next').disabled=S.step==STEPS.length-1;
  const c=$('#nav [aria-current]');if(c)c.scrollIntoView({inline:'center',block:'nearest'})}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(!b)return;const a=b.dataset.a,v=b.dataset.v;
- if(a=='mclose'){closeM();return}else if(a=='express'){track('telle_quelle');S.express=1;S.step=6;scrollTo(0,0)}else if(a=='modif'){track('modifier');S.express=0;S.step=1;scrollTo(0,0)}else if(a=='cgv'){e.preventDefault();showM(CGV_HTML);return}else if(a=='mphone'){closeM();S.step=6;render();setTimeout(()=>{const k=!okTel()?'phone':!okAdr()?(S.info.street.trim().length>2?'city':'street'):(['email','site'].find(k=>!S.info[k])||'phone');const i=document.querySelector('[data-f='+k+']');if(i)i.focus()},60);return}else if(a=='mcont'){closeM();S.warned=1;S.step=7;render();scrollTo(0,0);return}else if(a=='go'){if(!guard(+v))return;S.step=+v;scrollTo(0,0)}else if(a=='set')S[b.dataset.k]=+v;else if(a=='tab')S.tab=v;
- else if(a=='zoom')S.z=v==0?1:Math.max(.4,Math.min(2,S.z+ +v));
+ if(a=='copymail'){copyMail(b);return}else if(a=='mclose'){closeM();return}else if(a=='express'){track('telle_quelle');S.express=1;S.step=5;scrollTo(0,0)}else if(a=='modif'){track('modifier');S.express=0;S.step=1;scrollTo(0,0)}else if(a=='cgv'){e.preventDefault();showM(CGV_HTML);return}else if(a=='mphone'){closeM();S.step=5;render();setTimeout(()=>{const k=!okTel()?'phone':!okAdr()?(S.info.street.trim().length>2?'city':'street'):(['email','site'].find(k=>!S.info[k])||'phone');const i=document.querySelector('[data-f='+k+']');if(i)i.focus()},60);return}else if(a=='mcont'){closeM();S.warned=1;S.step=6;render();scrollTo(0,0);return}else if(a=='go'){if(!guard(+v))return;S.step=+v;scrollTo(0,0)}else if(a=='set')S[b.dataset.k]=+v;
  else if(a=='flip'){S.fl=S.fl?0:1;$('#cd').classList.toggle('fl',!!S.fl);b.setAttribute('aria-pressed',!!S.fl);return}
  else if(a=='vcf'){if(window.claude){S.vn=1;render();return}const u=URL.createObjectURL(new Blob([vcf()],{type:'text/vcard'})),l=document.createElement('a');l.href=u;l.download='contact.vcf';l.click();setTimeout(()=>URL.revokeObjectURL(u),500);return}
  else if(a=='wallet')S.wallet=1;else if(a=='order')S.ordered=1;else if(a=='back')S.ordered=0;
  render()});
 document.addEventListener('input',e=>{const f=e.target.dataset.f;if(!f)return;S.info[f]=e.target.value;$('#pv').innerHTML=cardFlip()});
-document.addEventListener('change',e=>{if(e.target.id!='cgv')return;S.cgv=e.target.checked;const a=document.querySelector('a.btn.p[data-pay]');if(a){a.classList.toggle('off',!S.cgv);a.href=S.cgv?a.dataset.pay:'#';a.setAttribute('aria-disabled',String(!S.cgv))}});
+document.addEventListener('change',e=>{if(e.target.id=='gopt'){S.google=e.target.checked?1:0;render();return}if(e.target.id!='cgv')return;S.cgv=e.target.checked;const a=document.querySelector('a.btn.p[data-pay]');if(a){a.classList.toggle('off',!S.cgv);a.href=S.cgv?a.dataset.pay:'#';a.setAttribute('aria-disabled',String(!S.cgv))}});
 document.addEventListener('click',e=>{const a=e.target.closest('a.btn.p');if(a){if(!S.cgv){e.preventDefault();showM('<h3>Une dernière étape</h3><p>Merci d\'accepter les conditions générales de vente avant de payer.</p><button class="btn p" data-a="mclose">Compris</button>')}}},true);
-$('#prev').onclick=()=>{S.step=(S.express&&S.step==6)?0:Math.max(0,S.step-1);render();scrollTo(0,0)};
+$('#prev').onclick=()=>{S.step=(S.express&&S.step==5)?0:Math.max(0,S.step-1);render();scrollTo(0,0)};
 $('#next').onclick=()=>{const t=Math.min(STEPS.length-1,S.step+1);if(!guard(t))return;S.step=t;render();scrollTo(0,0)};
-addEventListener('resize',fitDoc);
-render();track('page_ouverte');
+{const H=location.hash.replace('#','');if(H=='merci'||H=='apercu-merci'||H=='apercu-merci-google'){if(H=='apercu-merci-google'&&GOOGLE_OPTION)S.google=1;showThanks(H!='merci');track('page_merci')}else{render();track('page_ouverte')}}
 document.addEventListener('pointermove',e=>{const s=document.querySelector('.stage');if(!s)return;const r=s.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;s.style.transform='perspective(900px) rotateY('+x*12+'deg) rotateX('+(-y*9)+'deg)'});
 </script>
 </body>
 </html>
+
+</body></html>
