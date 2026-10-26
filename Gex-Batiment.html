@@ -457,7 +457,7 @@ function saveOrder(){try{localStorage.setItem('reef_commande',JSON.stringify({no
 function stripeUrl(){const base=S.google?STRIPE_URL_G:STRIPE_URL;if(!base)return'#';const ref=[orderNo(),S.info.siren.replace(/\D/g,''),'L'+S.logo,'P'+S.pal,'S'+S.style,'G'+S.sig,'GBP'+(S.google?1:0)].join('_');let u=base+'?client_reference_id='+encodeURIComponent(ref);if(S.info.email)u+='&prefilled_email='+encodeURIComponent(S.info.email);return u}
 
 /* ============ ÉTAT CENTRAL ============ */
-const S={step:0,logo:0,pal:0,style:1,sig:0,google:0,fl:0,ordered:0,wallet:0,
+const S={step:0,logo:1,pal:0,style:1,sig:0,google:0,fl:0,ordered:0,wallet:0,
 info:{name:'Gex Bâtiment',ini:'GB',boss:'',legal:'',siren:'109854372',siret:'109854372 00017',street:'A003, 408 rue de Gex-la-Ville',city:'01170 Gex',act:'Peinture et travaux du bâtiment',naf:'',ins:'',slogan:'',phone:'06 08 72 63 74',email:'',site:''}};
 const FIELDS=[['name','Entreprise'],['boss','Dirigeant'],['legal','Forme juridique'],['siren','SIREN'],['siret','SIRET'],['street','Rue et numéro (obligatoire)'],['city','Code postal et ville (obligatoire)'],['act','Activité'],['naf','NAF'],['slogan','Slogan'],['phone','Téléphone (obligatoire)'],['email','E-mail (conseillé)'],['site','Site internet (facultatif)']];
 
