@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /envoi-
+
+Sitemap: https://reefprostudio.github.io/ma-maison-haute-loire/sitemap.xml
